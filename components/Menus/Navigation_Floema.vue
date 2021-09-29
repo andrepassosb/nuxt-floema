@@ -27,12 +27,6 @@
         >
           <span> {{ section.name }}</span>
         </NuxtLink>
-        <!-- <a
-          class="navigationlist__link"
-          data-animation="link"
-          href="Link(item.link)"
-          ><span>item.text</span></a
-        > -->
       </li>
     </ul>
   </nav>
@@ -51,15 +45,87 @@ export default {
     this.sections = db_section.section.content
   },
   methods:{
-    // createNavigation(){
-    //   if(db_section){
-    //     db_section.content.forEach(section => {
-    //       section
-    //     });
-    //   }
-    // }
   }
 }
 
 </script>
 
+<style>
+.navigation__list__link {
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  vertical-align: top;
+}
+.navigation__list__link {
+  font-family: "George X";
+  font-size: 2.4rem;
+  letter-spacing: 0.1rem;
+  line-height: 1;
+}
+.navigation__list__link:after{
+  background: currentColor;
+  bottom: 0;
+  content: "";
+  height: 1px;
+  left: 0;
+  position: absolute;
+  transition: transform 0.7s cubic-bezier(0.77, 0, 0.175, 1);
+  width: 100%;
+}
+
+.navigation__list__link:hover:after {
+  transform: scaleX(1);
+  transform-origin: left center;
+}
+
+.navigation__list__link:after {
+  transform: scaleX(0);
+  transform-origin: right center;
+}
+
+.navigation {
+  color: #F9F1E7;
+  pointer-events: none;
+  position: fixed;
+  z-index: 3;
+}
+
+.navigation__link {
+  font-size: 0;
+  height: 2rem;
+  left: 4rem;
+  pointer-events: auto;
+  position: absolute;
+  top: 4rem;
+  transition: opacity 0.4s ease;
+  width: 12.8rem;
+}
+.navigation__link:hover {
+  opacity: 0.5;
+}
+@media (max-width: 767px) {
+  .navigation__link {
+    height: 4.3rem;
+    left: 5rem;
+    top: 5rem;
+    width: 27.9rem;
+  }
+}
+
+.navigation__link__icon {
+  display: block;
+}
+
+.navigation__list__item {
+  pointer-events: auto;
+  position: absolute;
+  right: 4rem;
+  top: 4rem;
+}
+
+.navigation__list__link {
+  display: block;
+}
+
+</style>

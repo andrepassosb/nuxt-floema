@@ -134,56 +134,7 @@ export default {
   opacity: 1;
   visibility: visible;
 }
-.home__titles__title {
-  font-family: "George X";
-  font-size: 20rem;
-}
-.home__titles {
-  left: 50%;
-  position: absolute;
-  top: 0;
-  transform: translateX(-50%);
-}
-.home__titles__label {
-  height: 16rem;
-  letter-spacing: 0.1rem;
-  position: relative;
-  text-align: center;
-  text-transform: uppercase;
-}
-@media (max-width: 767px) {
-  .home__titles__label {
-    font-size: 1.2rem;
-  }
-}
-.home__titles__label__text {
-  display: inline-block;
-  left: 50%;
-  position: absolute;
-  top: 50%;
-  transform: translate(-50%, -50%) rotate(-90deg);
-  width: 10rem;
-}
-.home__titles__title:nth-child(2) {
-  height: 28.6rem;
-}
-.home__titles__title:nth-child(4) {
-  height: 45.1rem;
-}
-.home__titles__title:nth-child(6) {
-  height: 53.1rem;
-}
-.home__titles__title:nth-child(8) {
-  height: 28.8rem;
-}
-.home__titles__title__text {
-  display: inline-block;
-  left: 50%;
-  position: absolute;
-  top: 50%;
-  transform: translate(-50%, -50%) rotate(-90deg);
-  white-space: nowrap;
-}
+
 .home {
   overflow: hidden;
   text-align: center;
@@ -257,34 +208,7 @@ export default {
   display: block;
   width: 100%;
 }
-.home__link {
-  align-items: center;
-  bottom: 5rem;
-  display: flex;
-  height: 6rem;
-  justify-content: center;
-  left: 50%;
-  letter-spacing: 0.05rem;
-  position: absolute;
-  text-transform: uppercase;
-  transform: translateX(-50%);
-  width: 28.8rem;
-  z-index: 2;
-}
-.home__link span {
-  display: inline-block;
-  line-height: 1;
-  position: relative;
-  vertical-align: middle;
-}
-@media (max-width: 767px) {
-  .home__link {
-    bottom: 7.5rem;
-    height: 13.7rem;
-    width: 55rem;
-  }
-}
-.home__link__icon,
+
 .home__wrapper,
 .home {
   height: 100%;
@@ -298,5 +222,13 @@ export default {
   align-items: center;
   display: flex;
   justify-content: center;
+}
+.home__titles__label{
+  font-size: 1.2rem;
+}
+@media (max-width: 767px) {
+  .home__titles__label{
+    font-size: 3rem;
+  }
 }
 </style>

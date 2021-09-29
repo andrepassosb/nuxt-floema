@@ -10,8 +10,9 @@
         :class="`home__gallery__media home__gallery__media--${Math.round(index % 5 + 1)}`">
         <img 
           class="home__gallery__media__image" 
-          :alt="media.image.alt" 
-          :data-src="media.image.url"/>
+          :alt="media.image.alt"
+          :data-src="`https://dxemhjekrc4z1.cloudfront.net/fit-in/300x300/${media.image.url}`"
+          :src="`https://dxemhjekrc4z1.cloudfront.net/fit-in/300x300/${media.image.url}`">
       </figure>
     </template>
   </div>
