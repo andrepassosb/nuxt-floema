@@ -1,0 +1,73 @@
+{"section":
+  {
+    "status": "1",
+    "content": [
+      {
+        "id": 366938,
+        "name": "Home",
+        "visible": 1,
+        "mainImage": {
+          "url": null,
+          "class": "center-center"
+        },
+        "menu_visible": 1,
+        "type": "navigation",
+        "target": 0,
+        "route": "/",
+        "listPages": 0,
+        "seoText": null,
+        "customHeader": null,
+        "customFooter": null,
+        "sortBy": "CHRONODESC",
+        "renderTools": 0,
+        "isHome": false,
+        "subRoutes": 1,
+        "subPages": 0
+      },
+      {
+        "id": 366952,
+        "name": "Colletions",
+        "visible": 1,
+        "mainImage": {
+          "url": null,
+          "class": "center-center"
+        },
+        "menu_visible": 1,
+        "type": "navigation",
+        "target": 0,
+        "route": "/colletions",
+        "listPages": 0,
+        "seoText": null,
+        "customHeader": null,
+        "customFooter": null,
+        "sortBy": "CHRONODESC",
+        "renderTools": 0,
+        "isHome": false,
+        "subRoutes": 1,
+        "subPages": 0
+      },
+      {
+        "id": 367472,
+        "name": "About",
+        "visible": 1,
+        "mainImage": {
+          "url": null,
+          "class": "center-center"
+        },
+        "menu_visible": 1,
+        "type": "navigation",
+        "target": 0,
+        "route": "/about",
+        "listPages": 0,
+        "seoText": null,
+        "customHeader": null,
+        "customFooter": null,
+        "sortBy": "CHRONODESC",
+        "renderTools": 0,
+        "isHome": false,
+        "subRoutes": 1,
+        "subPages": 0
+      }
+    ]
+  }
+}

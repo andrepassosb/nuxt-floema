@@ -1,0 +1,728 @@
+{"home":
+{
+  "status": "1",
+  "content": 
+  {
+    "postId": 366938,
+    "siteId": 4287,
+    "type": "post",
+    "title": "",
+    "summary": "",
+    "seoText": "",
+    "renderTools": 0,
+    "address": null,
+    "country": null,
+    "state": null,
+    "is_home": false,
+    "home_slider": false,
+    "is_imported": 0,
+    "city": null,
+    "location": null,
+    "locationJson": {
+      "country": null,
+      "state": null,
+      "city": null,
+      "address": null,
+      "geolocation": null
+    },
+    "visible": 1,
+    "automatic": 0,
+    "listPages": 0,
+    "customHeader": null,
+    "customFooter": null,
+    "sketch": 0,
+    "sortBy": "CHRONODESC",
+    "deleted": 0,
+    "tags": [
+      
+    ],
+    "category_list": [
+      
+    ],
+    "images": [
+      {
+        "path": "uploads/site/4287/image/2021/09/18/2.png",
+        "id": 1130667
+      },
+      {
+        "path": "uploads/site/4287/image/2021/09/18/3.png",
+        "id": 1130668
+      },
+      {
+        "path": "uploads/site/4287/image/2021/09/18/4.png",
+        "id": 1130669
+      },
+      {
+        "path": "uploads/site/4287/image/2021/09/18/5.png",
+        "id": 1130670
+      }
+    ],
+    "mainImage": "uploads/site/4287/image/2021/09/18/1.png",
+    "height": "1174",
+    "width": "831",
+    "mainImageClass": "center-center",
+    "route": "/home",
+    "target_blank": 0,
+    "showDate": 1,
+    "published_at": "2021-08-06",
+    "display_date": "2021-08-06",
+    "created_at": "18/09/2021",
+    "created_time": 1631964028,
+    "updated_at": "2021-09-25 23:12:08",
+    "comments": [
+      
+    ],
+    "likes": [
+      
+    ],
+    "count_likes": 0,
+    "count_comments": 0,
+    "next": {
+      "title": "preloader",
+      "mainImage": null,
+      "route": "/preloader",
+      "created_at": "18/09/2021",
+      "display_date": "2021-08-06",
+      "showDate": 1
+    },
+    "prev": {
+      "title": "",
+      "mainImage": "uploads/site/4287/image/2021/09/19/web-2.png",
+      "route": "/about",
+      "created_at": "19/09/2021",
+      "display_date": "2021-08-06",
+      "showDate": 1
+    },
+    "content": [
+      {
+        "frameId": 1540297,
+        "frameType": "post",
+        "frameDataId": 368013,
+        "frameStatus": 1,
+        "component": "maincontent-default",
+        "extra": null,
+        "grid": 12,
+        "frameOrigin": null,
+        "action": null,
+        "actionType": 0,
+        "subPagesCategories": [
+          
+        ],
+        "frameContent": [
+          {
+            "frameId": 1540298,
+            "frameType": "title",
+            "frameDataId": 1168348,
+            "frameStatus": 1,
+            "component": null,
+            "extra": null,
+            "grid": 12,
+            "frameOrigin": null,
+            "action": null,
+            "actionType": 0,
+            "subPagesCategories": [
+              
+            ],
+            "frameContent": "Collection One, Aria, Collection Two, Onde, Collection Three, Treccia, Collection Four , Vita"
+          },
+          {
+            "frameId": 1540301,
+            "frameType": "gallery",
+            "frameDataId": 1168351,
+            "frameStatus": 1,
+            "component": null,
+            "extra": null,
+            "grid": 12,
+            "frameOrigin": null,
+            "action": null,
+            "actionType": 0,
+            "subPagesCategories": [
+              
+            ],
+            "frameContent": {
+              "text": null,
+              "showText": "0",
+              "items": [
+                {
+                  "type": "image",
+                  "id": 1635625,
+                  "image": {
+                    "url": "uploads/site/4287/image/2021/09/18/1.png",
+                    "width": "831",
+                    "height": "1174",
+                    "alt": null
+                  },
+                  "title": null,
+                  "subtitle": null,
+                  "href": null,
+                  "embed": null,
+                  "embedFile": null,
+                  "target": "_self",
+                  "button": false,
+                  "buttonText": null,
+                  "page": null,
+                  "likes": 0,
+                  "comments": 0,
+                  "location": null,
+                  "date": null,
+                  "autoplay": false,
+                  "expand": false,
+                  "focalPoint": {
+                    "x": 50,
+                    "y": 50
+                  }
+                },
+                {
+                  "type": "image",
+                  "id": 1635626,
+                  "image": {
+                    "url": "uploads/site/4287/image/2021/09/18/2.png",
+                    "width": "831",
+                    "height": "1174",
+                    "alt": null
+                  },
+                  "title": null,
+                  "subtitle": null,
+                  "href": null,
+                  "embed": null,
+                  "embedFile": null,
+                  "target": "_self",
+                  "button": false,
+                  "buttonText": null,
+                  "page": null,
+                  "likes": 0,
+                  "comments": 0,
+                  "location": null,
+                  "date": null,
+                  "autoplay": false,
+                  "expand": false,
+                  "focalPoint": {
+                    "x": 50,
+                    "y": 50
+                  }
+                },
+                {
+                  "type": "image",
+                  "id": 1635627,
+                  "image": {
+                    "url": "uploads/site/4287/image/2021/09/18/3.png",
+                    "width": "831",
+                    "height": "1174",
+                    "alt": null
+                  },
+                  "title": null,
+                  "subtitle": null,
+                  "href": null,
+                  "embed": null,
+                  "embedFile": null,
+                  "target": "_self",
+                  "button": false,
+                  "buttonText": null,
+                  "page": null,
+                  "likes": 0,
+                  "comments": 0,
+                  "location": null,
+                  "date": null,
+                  "autoplay": false,
+                  "expand": false,
+                  "focalPoint": {
+                    "x": 50,
+                    "y": 50
+                  }
+                },
+                {
+                  "type": "image",
+                  "id": 1635628,
+                  "image": {
+                    "url": "uploads/site/4287/image/2021/09/18/4.png",
+                    "width": "831",
+                    "height": "1174",
+                    "alt": null
+                  },
+                  "title": null,
+                  "subtitle": null,
+                  "href": null,
+                  "embed": null,
+                  "embedFile": null,
+                  "target": "_self",
+                  "button": false,
+                  "buttonText": null,
+                  "page": null,
+                  "likes": 0,
+                  "comments": 0,
+                  "location": null,
+                  "date": null,
+                  "autoplay": false,
+                  "expand": false,
+                  "focalPoint": {
+                    "x": 50,
+                    "y": 50
+                  }
+                },
+                {
+                  "type": "image",
+                  "id": 1635629,
+                  "image": {
+                    "url": "uploads/site/4287/image/2021/09/18/5.png",
+                    "width": "831",
+                    "height": "1174",
+                    "alt": null
+                  },
+                  "title": null,
+                  "subtitle": null,
+                  "href": null,
+                  "embed": null,
+                  "embedFile": null,
+                  "target": "_self",
+                  "button": false,
+                  "buttonText": null,
+                  "page": null,
+                  "likes": 0,
+                  "comments": 0,
+                  "location": null,
+                  "date": null,
+                  "autoplay": false,
+                  "expand": false,
+                  "focalPoint": {
+                    "x": 50,
+                    "y": 50
+                  }
+                },
+                {
+                  "type": "image",
+                  "id": 1635630,
+                  "image": {
+                    "url": "uploads/site/4287/image/2021/09/18/6.png",
+                    "width": "831",
+                    "height": "1174",
+                    "alt": null
+                  },
+                  "title": null,
+                  "subtitle": null,
+                  "href": null,
+                  "embed": null,
+                  "embedFile": null,
+                  "target": "_self",
+                  "button": false,
+                  "buttonText": null,
+                  "page": null,
+                  "likes": 0,
+                  "comments": 0,
+                  "location": null,
+                  "date": null,
+                  "autoplay": false,
+                  "expand": false,
+                  "focalPoint": {
+                    "x": 50,
+                    "y": 50
+                  }
+                },
+                {
+                  "type": "image",
+                  "id": 1635631,
+                  "image": {
+                    "url": "uploads/site/4287/image/2021/09/18/7.png",
+                    "width": "831",
+                    "height": "1174",
+                    "alt": null
+                  },
+                  "title": null,
+                  "subtitle": null,
+                  "href": null,
+                  "embed": null,
+                  "embedFile": null,
+                  "target": "_self",
+                  "button": false,
+                  "buttonText": null,
+                  "page": null,
+                  "likes": 0,
+                  "comments": 0,
+                  "location": null,
+                  "date": null,
+                  "autoplay": false,
+                  "expand": false,
+                  "focalPoint": {
+                    "x": 50,
+                    "y": 50
+                  }
+                },
+                {
+                  "type": "image",
+                  "id": 1635632,
+                  "image": {
+                    "url": "uploads/site/4287/image/2021/09/18/8.png",
+                    "width": "831",
+                    "height": "1174",
+                    "alt": null
+                  },
+                  "title": null,
+                  "subtitle": null,
+                  "href": null,
+                  "embed": null,
+                  "embedFile": null,
+                  "target": "_self",
+                  "button": false,
+                  "buttonText": null,
+                  "page": null,
+                  "likes": 0,
+                  "comments": 0,
+                  "location": null,
+                  "date": null,
+                  "autoplay": false,
+                  "expand": false,
+                  "focalPoint": {
+                    "x": 50,
+                    "y": 50
+                  }
+                },
+                {
+                  "type": "image",
+                  "id": 1635633,
+                  "image": {
+                    "url": "uploads/site/4287/image/2021/09/18/9.png",
+                    "width": "831",
+                    "height": "1174",
+                    "alt": null
+                  },
+                  "title": null,
+                  "subtitle": null,
+                  "href": null,
+                  "embed": null,
+                  "embedFile": null,
+                  "target": "_self",
+                  "button": false,
+                  "buttonText": null,
+                  "page": null,
+                  "likes": 0,
+                  "comments": 0,
+                  "location": null,
+                  "date": null,
+                  "autoplay": false,
+                  "expand": false,
+                  "focalPoint": {
+                    "x": 50,
+                    "y": 50
+                  }
+                },
+                {
+                  "type": "image",
+                  "id": 1635634,
+                  "image": {
+                    "url": "uploads/site/4287/image/2021/09/18/10.png",
+                    "width": "831",
+                    "height": "1174",
+                    "alt": null
+                  },
+                  "title": null,
+                  "subtitle": null,
+                  "href": null,
+                  "embed": null,
+                  "embedFile": null,
+                  "target": "_self",
+                  "button": false,
+                  "buttonText": null,
+                  "page": null,
+                  "likes": 0,
+                  "comments": 0,
+                  "location": null,
+                  "date": null,
+                  "autoplay": false,
+                  "expand": false,
+                  "focalPoint": {
+                    "x": 50,
+                    "y": 50
+                  }
+                },
+                {
+                  "type": "image",
+                  "id": 1635635,
+                  "image": {
+                    "url": "uploads/site/4287/image/2021/09/18/11.png",
+                    "width": "831",
+                    "height": "1174",
+                    "alt": null
+                  },
+                  "title": null,
+                  "subtitle": null,
+                  "href": null,
+                  "embed": null,
+                  "embedFile": null,
+                  "target": "_self",
+                  "button": false,
+                  "buttonText": null,
+                  "page": null,
+                  "likes": 0,
+                  "comments": 0,
+                  "location": null,
+                  "date": null,
+                  "autoplay": false,
+                  "expand": false,
+                  "focalPoint": {
+                    "x": 50,
+                    "y": 50
+                  }
+                },
+                {
+                  "type": "image",
+                  "id": 1635636,
+                  "image": {
+                    "url": "uploads/site/4287/image/2021/09/18/12.png",
+                    "width": "831",
+                    "height": "1174",
+                    "alt": null
+                  },
+                  "title": null,
+                  "subtitle": null,
+                  "href": null,
+                  "embed": null,
+                  "embedFile": null,
+                  "target": "_self",
+                  "button": false,
+                  "buttonText": null,
+                  "page": null,
+                  "likes": 0,
+                  "comments": 0,
+                  "location": null,
+                  "date": null,
+                  "autoplay": false,
+                  "expand": false,
+                  "focalPoint": {
+                    "x": 50,
+                    "y": 50
+                  }
+                },
+                {
+                  "type": "image",
+                  "id": 1635637,
+                  "image": {
+                    "url": "uploads/site/4287/image/2021/09/18/13.png",
+                    "width": "831",
+                    "height": "1174",
+                    "alt": null
+                  },
+                  "title": null,
+                  "subtitle": null,
+                  "href": null,
+                  "embed": null,
+                  "embedFile": null,
+                  "target": "_self",
+                  "button": false,
+                  "buttonText": null,
+                  "page": null,
+                  "likes": 0,
+                  "comments": 0,
+                  "location": null,
+                  "date": null,
+                  "autoplay": false,
+                  "expand": false,
+                  "focalPoint": {
+                    "x": 50,
+                    "y": 50
+                  }
+                },
+                {
+                  "type": "image",
+                  "id": 1635638,
+                  "image": {
+                    "url": "uploads/site/4287/image/2021/09/18/14.png",
+                    "width": "831",
+                    "height": "1174",
+                    "alt": null
+                  },
+                  "title": null,
+                  "subtitle": null,
+                  "href": null,
+                  "embed": null,
+                  "embedFile": null,
+                  "target": "_self",
+                  "button": false,
+                  "buttonText": null,
+                  "page": null,
+                  "likes": 0,
+                  "comments": 0,
+                  "location": null,
+                  "date": null,
+                  "autoplay": false,
+                  "expand": false,
+                  "focalPoint": {
+                    "x": 50,
+                    "y": 50
+                  }
+                },
+                {
+                  "type": "image",
+                  "id": 1635639,
+                  "image": {
+                    "url": "uploads/site/4287/image/2021/09/18/15.png",
+                    "width": "831",
+                    "height": "1174",
+                    "alt": null
+                  },
+                  "title": null,
+                  "subtitle": null,
+                  "href": null,
+                  "embed": null,
+                  "embedFile": null,
+                  "target": "_self",
+                  "button": false,
+                  "buttonText": null,
+                  "page": null,
+                  "likes": 0,
+                  "comments": 0,
+                  "location": null,
+                  "date": null,
+                  "autoplay": false,
+                  "expand": false,
+                  "focalPoint": {
+                    "x": 50,
+                    "y": 50
+                  }
+                },
+                {
+                  "type": "image",
+                  "id": 1635640,
+                  "image": {
+                    "url": "uploads/site/4287/image/2021/09/18/16.png",
+                    "width": "831",
+                    "height": "1174",
+                    "alt": null
+                  },
+                  "title": null,
+                  "subtitle": null,
+                  "href": null,
+                  "embed": null,
+                  "embedFile": null,
+                  "target": "_self",
+                  "button": false,
+                  "buttonText": null,
+                  "page": null,
+                  "likes": 0,
+                  "comments": 0,
+                  "location": null,
+                  "date": null,
+                  "autoplay": false,
+                  "expand": false,
+                  "focalPoint": {
+                    "x": 50,
+                    "y": 50
+                  }
+                },
+                {
+                  "type": "image",
+                  "id": 1635641,
+                  "image": {
+                    "url": "uploads/site/4287/image/2021/09/18/17.png",
+                    "width": "831",
+                    "height": "1174",
+                    "alt": null
+                  },
+                  "title": null,
+                  "subtitle": null,
+                  "href": null,
+                  "embed": null,
+                  "embedFile": null,
+                  "target": "_self",
+                  "button": false,
+                  "buttonText": null,
+                  "page": null,
+                  "likes": 0,
+                  "comments": 0,
+                  "location": null,
+                  "date": null,
+                  "autoplay": false,
+                  "expand": false,
+                  "focalPoint": {
+                    "x": 50,
+                    "y": 50
+                  }
+                },
+                {
+                  "type": "image",
+                  "id": 1635642,
+                  "image": {
+                    "url": "uploads/site/4287/image/2021/09/18/18.png",
+                    "width": "831",
+                    "height": "1174",
+                    "alt": null
+                  },
+                  "title": null,
+                  "subtitle": null,
+                  "href": null,
+                  "embed": null,
+                  "embedFile": null,
+                  "target": "_self",
+                  "button": false,
+                  "buttonText": null,
+                  "page": null,
+                  "likes": 0,
+                  "comments": 0,
+                  "location": null,
+                  "date": null,
+                  "autoplay": false,
+                  "expand": false,
+                  "focalPoint": {
+                    "x": 50,
+                    "y": 50
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "frameId": 1635606,
+            "frameType": "button",
+            "frameDataId": 1263047,
+            "frameStatus": 1,
+            "component": null,
+            "extra": null,
+            "grid": 12,
+            "frameOrigin": null,
+            "action": null,
+            "actionType": 0,
+            "subPagesCategories": [
+              
+            ],
+            "frameContent": {
+              "dataPhone": {
+                "idd": "55",
+                "phone": null
+              },
+              "settings": {
+                "target": "_blank",
+                "type": "url",
+                "size": "normal",
+                "class": null
+              },
+              "ref": "https://colletions",
+              "title": null,
+              "text": "Discover Colletions"
+            }
+          }
+        ],
+        "mainImage": {
+          "url": "uploads/site/4287/image/2021/09/18/1.png",
+          "width": "831",
+          "height": "1174",
+          "class": "center-center"
+        }
+      }
+    ],
+    "subpagesCategories": [
+      
+    ],
+    "page_reference": 357513,
+    "category": [
+      {
+        "id": 357513,
+        "value": 357513,
+        "title": "Blog",
+        "text": "Blog",
+        "menu": 1,
+        "route": null,
+        "position": 8
+      }
+    ],
+    "position": 999
+  }
+}
+}

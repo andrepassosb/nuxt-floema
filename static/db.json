@@ -1,0 +1,2217 @@
+{"about":
+  {
+    "status": "1",
+    "content": {
+      "postId": 367472,
+      "siteId": 4287,
+      "type": "section",
+      "title": "about-floema",
+      "summary": "",
+      "seoText": "",
+      "renderTools": 0,
+      "address": null,
+      "country": null,
+      "state": null,
+      "is_home": false,
+      "home_slider": false,
+      "is_imported": 0,
+      "city": null,
+      "location": null,
+      "locationJson": {
+        "country": null,
+        "state": null,
+        "city": null,
+        "address": null,
+        "geolocation": null
+      },
+      "visible": 1,
+      "automatic": 1,
+      "listPages": 0,
+      "customHeader": null,
+      "customFooter": null,
+      "sketch": 0,
+      "sortBy": "CHRONODESC",
+      "deleted": 0,
+      "tags": [
+        
+      ],
+      "category_list": [
+        
+      ],
+      "images": [
+        {
+          "path": "uploads/site/4287/image/2021/09/18/3.png",
+          "id": 1130668
+        },
+        {
+          "path": "uploads/site/4287/image/2021/09/18/4.png",
+          "id": 1130669
+        },
+        {
+          "path": "uploads/site/4287/image/2021/09/18/7.png",
+          "id": 1130672
+        },
+        {
+          "path": "uploads/site/4287/image/2021/09/18/6.png",
+          "id": 1130671
+        }
+      ],
+      "mainImage": "uploads/site/4287/image/2021/09/18/1.png",
+      "height": 1174,
+      "width": 831,
+      "mainImageClass": "center-center",
+      "route": "/about-floema",
+      "target_blank": 0,
+      "showDate": 0,
+      "published_at": "2021-09-23",
+      "display_date": "2021-09-23",
+      "created_at": "23/09/2021",
+      "created_time": 1632440010,
+      "updated_at": "2021-09-23 22:21:29",
+      "comments": [
+        
+      ],
+      "likes": [
+        
+      ],
+      "count_likes": 0,
+      "count_comments": 0,
+      "next": null,
+      "prev": null,
+      "content": [
+        {
+          "frameId": 1626377,
+          "frameType": "post",
+          "frameDataId": 368594,
+          "frameStatus": 1,
+          "component": "about-startcrop",
+          "extra": null,
+          "grid": 12,
+          "frameOrigin": null,
+          "action": null,
+          "actionType": 0,
+          "subPagesCategories": [
+            
+          ],
+          "frameContent": [
+            {
+              "frameId": 1626378,
+              "frameType": "container",
+              "frameDataId": 1253887,
+              "frameStatus": 1,
+              "component": null,
+              "extra": null,
+              "grid": 6,
+              "frameOrigin": null,
+              "action": null,
+              "actionType": 0,
+              "subPagesCategories": [
+                
+              ],
+              "frameContent": [
+                {
+                  "frameId": 1626379,
+                  "frameType": "title",
+                  "frameDataId": 1253885,
+                  "frameStatus": 1,
+                  "component": null,
+                  "extra": null,
+                  "grid": 12,
+                  "frameOrigin": null,
+                  "action": null,
+                  "actionType": 0,
+                  "subPagesCategories": [
+                    
+                  ],
+                  "frameContent": null
+                },
+                {
+                  "frameId": 1626380,
+                  "frameType": "text",
+                  "frameDataId": 1253886,
+                  "frameStatus": 1,
+                  "component": "bio1",
+                  "extra": null,
+                  "grid": 12,
+                  "frameOrigin": null,
+                  "action": null,
+                  "actionType": 0,
+                  "subPagesCategories": [
+                    
+                  ],
+                  "frameContent": null
+                }
+              ]
+            },
+            {
+              "frameId": 1626381,
+              "frameType": "gallery",
+              "frameDataId": 1253888,
+              "frameStatus": 1,
+              "component": "gallery-carousel",
+              "extra": null,
+              "grid": 6,
+              "frameOrigin": null,
+              "action": null,
+              "actionType": 0,
+              "subPagesCategories": [
+                
+              ],
+              "frameContent": {
+                "text": "Creating new dialogues  between threads and metal",
+                "showText": "1",
+                "items": [
+                  {
+                    "type": "image",
+                    "id": 1628128,
+                    "image": {
+                      "url": "uploads/site/4287/image/2021/09/18/1.png",
+                      "width": "831",
+                      "height": "1174",
+                      "alt": null
+                    },
+                    "title": null,
+                    "subtitle": null,
+                    "href": null,
+                    "embed": null,
+                    "embedFile": null,
+                    "target": "_self",
+                    "button": false,
+                    "buttonText": null,
+                    "page": null,
+                    "likes": 0,
+                    "comments": 0,
+                    "location": null,
+                    "date": null,
+                    "autoplay": false,
+                    "expand": false,
+                    "focalPoint": {
+                      "x": 50,
+                      "y": 50
+                    }
+                  },
+                  {
+                    "type": "image",
+                    "id": 1628129,
+                    "image": {
+                      "url": "uploads/site/4287/image/2021/09/18/3.png",
+                      "width": "831",
+                      "height": "1174",
+                      "alt": null
+                    },
+                    "title": null,
+                    "subtitle": null,
+                    "href": null,
+                    "embed": null,
+                    "embedFile": null,
+                    "target": "_self",
+                    "button": false,
+                    "buttonText": null,
+                    "page": null,
+                    "likes": 0,
+                    "comments": 0,
+                    "location": null,
+                    "date": null,
+                    "autoplay": false,
+                    "expand": false,
+                    "focalPoint": {
+                      "x": 50,
+                      "y": 50
+                    }
+                  },
+                  {
+                    "type": "image",
+                    "id": 1628130,
+                    "image": {
+                      "url": "uploads/site/4287/image/2021/09/18/4.png",
+                      "width": "831",
+                      "height": "1174",
+                      "alt": null
+                    },
+                    "title": null,
+                    "subtitle": null,
+                    "href": null,
+                    "embed": null,
+                    "embedFile": null,
+                    "target": "_self",
+                    "button": false,
+                    "buttonText": null,
+                    "page": null,
+                    "likes": 0,
+                    "comments": 0,
+                    "location": null,
+                    "date": null,
+                    "autoplay": false,
+                    "expand": false,
+                    "focalPoint": {
+                      "x": 50,
+                      "y": 50
+                    }
+                  },
+                  {
+                    "type": "image",
+                    "id": 1628131,
+                    "image": {
+                      "url": "uploads/site/4287/image/2021/09/18/7.png",
+                      "width": "831",
+                      "height": "1174",
+                      "alt": null
+                    },
+                    "title": null,
+                    "subtitle": null,
+                    "href": null,
+                    "embed": null,
+                    "embedFile": null,
+                    "target": "_self",
+                    "button": false,
+                    "buttonText": null,
+                    "page": null,
+                    "likes": 0,
+                    "comments": 0,
+                    "location": null,
+                    "date": null,
+                    "autoplay": false,
+                    "expand": false,
+                    "focalPoint": {
+                      "x": 50,
+                      "y": 50
+                    }
+                  },
+                  {
+                    "type": "image",
+                    "id": 1628132,
+                    "image": {
+                      "url": "uploads/site/4287/image/2021/09/18/6.png",
+                      "width": "831",
+                      "height": "1174",
+                      "alt": null
+                    },
+                    "title": null,
+                    "subtitle": null,
+                    "href": null,
+                    "embed": null,
+                    "embedFile": null,
+                    "target": "_self",
+                    "button": false,
+                    "buttonText": null,
+                    "page": null,
+                    "likes": 0,
+                    "comments": 0,
+                    "location": null,
+                    "date": null,
+                    "autoplay": false,
+                    "expand": false,
+                    "focalPoint": {
+                      "x": 50,
+                      "y": 50
+                    }
+                  },
+                  {
+                    "type": "image",
+                    "id": 1628133,
+                    "image": {
+                      "url": "uploads/site/4287/image/2021/09/18/2.png",
+                      "width": "831",
+                      "height": "1174",
+                      "alt": null
+                    },
+                    "title": null,
+                    "subtitle": null,
+                    "href": null,
+                    "embed": null,
+                    "embedFile": null,
+                    "target": "_self",
+                    "button": false,
+                    "buttonText": null,
+                    "page": null,
+                    "likes": 0,
+                    "comments": 0,
+                    "location": null,
+                    "date": null,
+                    "autoplay": false,
+                    "expand": false,
+                    "focalPoint": {
+                      "x": 50,
+                      "y": 50
+                    }
+                  },
+                  {
+                    "type": "image",
+                    "id": 1628134,
+                    "image": {
+                      "url": "uploads/site/4287/image/2021/09/18/9.png",
+                      "width": "831",
+                      "height": "1174",
+                      "alt": null
+                    },
+                    "title": null,
+                    "subtitle": null,
+                    "href": null,
+                    "embed": null,
+                    "embedFile": null,
+                    "target": "_self",
+                    "button": false,
+                    "buttonText": null,
+                    "page": null,
+                    "likes": 0,
+                    "comments": 0,
+                    "location": null,
+                    "date": null,
+                    "autoplay": false,
+                    "expand": false,
+                    "focalPoint": {
+                      "x": 50,
+                      "y": 50
+                    }
+                  },
+                  {
+                    "type": "image",
+                    "id": 1628135,
+                    "image": {
+                      "url": "uploads/site/4287/image/2021/09/18/10.png",
+                      "width": "831",
+                      "height": "1174",
+                      "alt": null
+                    },
+                    "title": null,
+                    "subtitle": null,
+                    "href": null,
+                    "embed": null,
+                    "embedFile": null,
+                    "target": "_self",
+                    "button": false,
+                    "buttonText": null,
+                    "page": null,
+                    "likes": 0,
+                    "comments": 0,
+                    "location": null,
+                    "date": null,
+                    "autoplay": false,
+                    "expand": false,
+                    "focalPoint": {
+                      "x": 50,
+                      "y": 50
+                    }
+                  },
+                  {
+                    "type": "image",
+                    "id": 1628136,
+                    "image": {
+                      "url": "uploads/site/4287/image/2021/09/18/11.png",
+                      "width": "831",
+                      "height": "1174",
+                      "alt": null
+                    },
+                    "title": null,
+                    "subtitle": null,
+                    "href": null,
+                    "embed": null,
+                    "embedFile": null,
+                    "target": "_self",
+                    "button": false,
+                    "buttonText": null,
+                    "page": null,
+                    "likes": 0,
+                    "comments": 0,
+                    "location": null,
+                    "date": null,
+                    "autoplay": false,
+                    "expand": false,
+                    "focalPoint": {
+                      "x": 50,
+                      "y": 50
+                    }
+                  },
+                  {
+                    "type": "image",
+                    "id": 1628137,
+                    "image": {
+                      "url": "uploads/site/4287/image/2021/09/18/12.png",
+                      "width": "831",
+                      "height": "1174",
+                      "alt": null
+                    },
+                    "title": null,
+                    "subtitle": null,
+                    "href": null,
+                    "embed": null,
+                    "embedFile": null,
+                    "target": "_self",
+                    "button": false,
+                    "buttonText": null,
+                    "page": null,
+                    "likes": 0,
+                    "comments": 0,
+                    "location": null,
+                    "date": null,
+                    "autoplay": false,
+                    "expand": false,
+                    "focalPoint": {
+                      "x": 50,
+                      "y": 50
+                    }
+                  },
+                  {
+                    "type": "image",
+                    "id": 1628138,
+                    "image": {
+                      "url": "uploads/site/4287/image/2021/09/18/13.png",
+                      "width": "831",
+                      "height": "1174",
+                      "alt": null
+                    },
+                    "title": null,
+                    "subtitle": null,
+                    "href": null,
+                    "embed": null,
+                    "embedFile": null,
+                    "target": "_self",
+                    "button": false,
+                    "buttonText": null,
+                    "page": null,
+                    "likes": 0,
+                    "comments": 0,
+                    "location": null,
+                    "date": null,
+                    "autoplay": false,
+                    "expand": false,
+                    "focalPoint": {
+                      "x": 50,
+                      "y": 50
+                    }
+                  },
+                  {
+                    "type": "image",
+                    "id": 1628139,
+                    "image": {
+                      "url": "uploads/site/4287/image/2021/09/18/8.png",
+                      "width": "831",
+                      "height": "1174",
+                      "alt": null
+                    },
+                    "title": null,
+                    "subtitle": null,
+                    "href": null,
+                    "embed": null,
+                    "embedFile": null,
+                    "target": "_self",
+                    "button": false,
+                    "buttonText": null,
+                    "page": null,
+                    "likes": 0,
+                    "comments": 0,
+                    "location": null,
+                    "date": null,
+                    "autoplay": false,
+                    "expand": false,
+                    "focalPoint": {
+                      "x": 50,
+                      "y": 50
+                    }
+                  },
+                  {
+                    "type": "image",
+                    "id": 1628140,
+                    "image": {
+                      "url": "uploads/site/4287/image/2021/09/18/15.png",
+                      "width": "831",
+                      "height": "1174",
+                      "alt": null
+                    },
+                    "title": null,
+                    "subtitle": null,
+                    "href": null,
+                    "embed": null,
+                    "embedFile": null,
+                    "target": "_self",
+                    "button": false,
+                    "buttonText": null,
+                    "page": null,
+                    "likes": 0,
+                    "comments": 0,
+                    "location": null,
+                    "date": null,
+                    "autoplay": false,
+                    "expand": false,
+                    "focalPoint": {
+                      "x": 50,
+                      "y": 50
+                    }
+                  },
+                  {
+                    "type": "image",
+                    "id": 1628141,
+                    "image": {
+                      "url": "uploads/site/4287/image/2021/09/18/16.png",
+                      "width": "831",
+                      "height": "1174",
+                      "alt": null
+                    },
+                    "title": null,
+                    "subtitle": null,
+                    "href": null,
+                    "embed": null,
+                    "embedFile": null,
+                    "target": "_self",
+                    "button": false,
+                    "buttonText": null,
+                    "page": null,
+                    "likes": 0,
+                    "comments": 0,
+                    "location": null,
+                    "date": null,
+                    "autoplay": false,
+                    "expand": false,
+                    "focalPoint": {
+                      "x": 50,
+                      "y": 50
+                    }
+                  },
+                  {
+                    "type": "image",
+                    "id": 1628142,
+                    "image": {
+                      "url": "uploads/site/4287/image/2021/09/18/17.png",
+                      "width": "831",
+                      "height": "1174",
+                      "alt": null
+                    },
+                    "title": null,
+                    "subtitle": null,
+                    "href": null,
+                    "embed": null,
+                    "embedFile": null,
+                    "target": "_self",
+                    "button": false,
+                    "buttonText": null,
+                    "page": null,
+                    "likes": 0,
+                    "comments": 0,
+                    "location": null,
+                    "date": null,
+                    "autoplay": false,
+                    "expand": false,
+                    "focalPoint": {
+                      "x": 50,
+                      "y": 50
+                    }
+                  },
+                  {
+                    "type": "image",
+                    "id": 1628143,
+                    "image": {
+                      "url": "uploads/site/4287/image/2021/09/18/18.png",
+                      "width": "831",
+                      "height": "1174",
+                      "alt": null
+                    },
+                    "title": null,
+                    "subtitle": null,
+                    "href": null,
+                    "embed": null,
+                    "embedFile": null,
+                    "target": "_self",
+                    "button": false,
+                    "buttonText": null,
+                    "page": null,
+                    "likes": 0,
+                    "comments": 0,
+                    "location": null,
+                    "date": null,
+                    "autoplay": false,
+                    "expand": false,
+                    "focalPoint": {
+                      "x": 50,
+                      "y": 50
+                    }
+                  },
+                  {
+                    "type": "image",
+                    "id": 1628144,
+                    "image": {
+                      "url": "uploads/site/4287/image/2021/09/18/5.png",
+                      "width": "831",
+                      "height": "1174",
+                      "alt": null
+                    },
+                    "title": null,
+                    "subtitle": null,
+                    "href": null,
+                    "embed": null,
+                    "embedFile": null,
+                    "target": "_self",
+                    "button": false,
+                    "buttonText": null,
+                    "page": null,
+                    "likes": 0,
+                    "comments": 0,
+                    "location": null,
+                    "date": null,
+                    "autoplay": false,
+                    "expand": false,
+                    "focalPoint": {
+                      "x": 50,
+                      "y": 50
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "frameId": 1627107,
+              "frameType": "image",
+              "frameDataId": 1254607,
+              "frameStatus": 1,
+              "component": null,
+              "extra": null,
+              "grid": 1,
+              "frameOrigin": null,
+              "action": null,
+              "actionType": 0,
+              "subPagesCategories": [
+                
+              ],
+              "frameContent": "uploads/site/4287/image/2021/09/19/b.jpg",
+              "width": "1133",
+              "height": "1600"
+            }
+          ],
+          "mainImage": {
+            "url": null,
+            "width": null,
+            "height": null,
+            "class": null
+          }
+        },
+        {
+          "frameId": 1626472,
+          "frameType": "post",
+          "frameDataId": 368596,
+          "frameStatus": 1,
+          "component": "about-startcrop",
+          "extra": null,
+          "grid": 12,
+          "frameOrigin": null,
+          "action": null,
+          "actionType": 0,
+          "subPagesCategories": [
+            
+          ],
+          "frameContent": [
+            {
+              "frameId": 1626473,
+              "frameType": "container",
+              "frameDataId": 1253981,
+              "frameStatus": 1,
+              "component": null,
+              "extra": null,
+              "grid": 7,
+              "frameOrigin": null,
+              "action": null,
+              "actionType": 0,
+              "subPagesCategories": [
+                
+              ],
+              "frameContent": [
+                {
+                  "frameId": 1626474,
+                  "frameType": "title",
+                  "frameDataId": 1253979,
+                  "frameStatus": 1,
+                  "component": null,
+                  "extra": null,
+                  "grid": 12,
+                  "frameOrigin": null,
+                  "action": null,
+                  "actionType": 0,
+                  "subPagesCategories": [
+                    
+                  ],
+                  "frameContent": "ABOUT ME"
+                },
+                {
+                  "frameId": 1626475,
+                  "frameType": "text",
+                  "frameDataId": 1253980,
+                  "frameStatus": 1,
+                  "component": "bio1",
+                  "extra": null,
+                  "grid": 12,
+                  "frameOrigin": null,
+                  "action": null,
+                  "actionType": 0,
+                  "subPagesCategories": [
+                    
+                  ],
+                  "frameContent": "<p>Valentina’s work plays around the surprise of what is possible to make with a simple and thin line: a thread.</p>\n<p>Coming from a family with a strong feminine tailoring tradition, she wanted to bring this passionate root into her jewellery world, finding new ways of working with textiles.</p>\n<p>She weaves freely thousands of meters of threads on a hydrosoluble fabric, cutting or interlacing them one with the other, to let unexpected connections appear.</p>\n<p>Her approach is both experimental and traditional: she likes to combine contemporary methods with ancient techniques, like Filigree.</p>\n<p>The latest work was chosen by the “Triennale Design Museum” in Milan to be part of the exhibition “W. Women in Italian design” (April 2016- February 2017).</p>"
+                }
+              ]
+            },
+            {
+              "frameId": 1626476,
+              "frameType": "gallery",
+              "frameDataId": 1253982,
+              "frameStatus": 1,
+              "component": "gallery-carousel",
+              "extra": null,
+              "grid": 5,
+              "frameOrigin": null,
+              "action": null,
+              "actionType": 0,
+              "subPagesCategories": [
+                
+              ],
+              "frameContent": {
+                "text": null,
+                "showText": "0",
+                "items": [
+                  {
+                    "type": "image",
+                    "id": 1628145,
+                    "image": {
+                      "url": "uploads/site/4287/image/2021/09/19/web-2.png",
+                      "width": "539",
+                      "height": "808",
+                      "alt": null
+                    },
+                    "title": null,
+                    "subtitle": null,
+                    "href": null,
+                    "embed": null,
+                    "embedFile": null,
+                    "target": "_self",
+                    "button": false,
+                    "buttonText": null,
+                    "page": null,
+                    "likes": 0,
+                    "comments": 0,
+                    "location": null,
+                    "date": null,
+                    "autoplay": false,
+                    "expand": false,
+                    "focalPoint": {
+                      "x": 50,
+                      "y": 50
+                    }
+                  }
+                ]
+              }
+            }
+          ],
+          "mainImage": {
+            "url": null,
+            "width": null,
+            "height": null,
+            "class": null
+          }
+        },
+        {
+          "frameId": 1626645,
+          "frameType": "post",
+          "frameDataId": 368599,
+          "frameStatus": 1,
+          "component": "about-startcrop",
+          "extra": null,
+          "grid": 12,
+          "frameOrigin": null,
+          "action": null,
+          "actionType": 0,
+          "subPagesCategories": [
+            
+          ],
+          "frameContent": [
+            {
+              "frameId": 1626646,
+              "frameType": "container",
+              "frameDataId": 1254151,
+              "frameStatus": 1,
+              "component": null,
+              "extra": null,
+              "grid": 7,
+              "frameOrigin": null,
+              "action": null,
+              "actionType": 0,
+              "subPagesCategories": [
+                
+              ],
+              "frameContent": [
+                {
+                  "frameId": 1626647,
+                  "frameType": "title",
+                  "frameDataId": 1254149,
+                  "frameStatus": 1,
+                  "component": null,
+                  "extra": null,
+                  "grid": 12,
+                  "frameOrigin": null,
+                  "action": null,
+                  "actionType": 0,
+                  "subPagesCategories": [
+                    
+                  ],
+                  "frameContent": "Floema"
+                },
+                {
+                  "frameId": 1626648,
+                  "frameType": "text",
+                  "frameDataId": 1254150,
+                  "frameStatus": 1,
+                  "component": "bio1",
+                  "extra": null,
+                  "grid": 12,
+                  "frameOrigin": null,
+                  "action": null,
+                  "actionType": 0,
+                  "subPagesCategories": [
+                    
+                  ],
+                  "frameContent": null
+                }
+              ]
+            },
+            {
+              "frameId": 1626649,
+              "frameType": "gallery",
+              "frameDataId": 1254152,
+              "frameStatus": 1,
+              "component": "gallery-carousel",
+              "extra": null,
+              "grid": 5,
+              "frameOrigin": null,
+              "action": null,
+              "actionType": 0,
+              "subPagesCategories": [
+                
+              ],
+              "frameContent": {
+                "text": null,
+                "showText": "0",
+                "items": [
+                  {
+                    "type": "image",
+                    "id": 1628146,
+                    "image": {
+                      "url": "uploads/site/4287/image/2021/09/19/copia-di-untitled-pink-roots.png",
+                      "width": "360",
+                      "height": "528",
+                      "alt": null
+                    },
+                    "title": null,
+                    "subtitle": null,
+                    "href": null,
+                    "embed": null,
+                    "embedFile": null,
+                    "target": "_self",
+                    "button": false,
+                    "buttonText": null,
+                    "page": null,
+                    "likes": 0,
+                    "comments": 0,
+                    "location": null,
+                    "date": null,
+                    "autoplay": false,
+                    "expand": false,
+                    "focalPoint": {
+                      "x": 50,
+                      "y": 50
+                    }
+                  },
+                  {
+                    "type": "image",
+                    "id": 1628147,
+                    "image": {
+                      "url": "uploads/site/4287/image/2021/09/19/copia-di-copia-di-fe12594.png",
+                      "width": "360",
+                      "height": "528",
+                      "alt": null
+                    },
+                    "title": null,
+                    "subtitle": null,
+                    "href": null,
+                    "embed": null,
+                    "embedFile": null,
+                    "target": "_self",
+                    "button": false,
+                    "buttonText": null,
+                    "page": null,
+                    "likes": 0,
+                    "comments": 0,
+                    "location": null,
+                    "date": null,
+                    "autoplay": false,
+                    "expand": false,
+                    "focalPoint": {
+                      "x": 50,
+                      "y": 50
+                    }
+                  }
+                ]
+              }
+            }
+          ],
+          "mainImage": {
+            "url": null,
+            "width": null,
+            "height": null,
+            "class": null
+          }
+        },
+        {
+          "frameId": 1626650,
+          "frameType": "post",
+          "frameDataId": 368600,
+          "frameStatus": 1,
+          "component": "about-startcrop",
+          "extra": null,
+          "grid": 12,
+          "frameOrigin": null,
+          "action": null,
+          "actionType": 0,
+          "subPagesCategories": [
+            
+          ],
+          "frameContent": [
+            {
+              "frameId": 1626651,
+              "frameType": "container",
+              "frameDataId": 1254155,
+              "frameStatus": 1,
+              "component": null,
+              "extra": null,
+              "grid": 7,
+              "frameOrigin": null,
+              "action": null,
+              "actionType": 0,
+              "subPagesCategories": [
+                
+              ],
+              "frameContent": [
+                {
+                  "frameId": 1626652,
+                  "frameType": "title",
+                  "frameDataId": 1254153,
+                  "frameStatus": 1,
+                  "component": null,
+                  "extra": null,
+                  "grid": 12,
+                  "frameOrigin": null,
+                  "action": null,
+                  "actionType": 0,
+                  "subPagesCategories": [
+                    
+                  ],
+                  "frameContent": "THE BRAND"
+                },
+                {
+                  "frameId": 1626653,
+                  "frameType": "text",
+                  "frameDataId": 1254154,
+                  "frameStatus": 1,
+                  "component": "bio1",
+                  "extra": null,
+                  "grid": 12,
+                  "frameOrigin": null,
+                  "action": null,
+                  "actionType": 0,
+                  "subPagesCategories": [
+                    
+                  ],
+                  "frameContent": "<p>FLOEMA is a new jewelry brand all design and handmade by me, Valentina Caprini, goldsmith, and artist based in Florence.</p>\n<p><br />The name FLOEMA is inspired by the vascular tissue of the plants, which brings the lifeblood from the roots to the branches and makes flowers and fruits bloom.</p>\n<p>Each FLOEMA piece is elegant and unique, created with a refined goldsmith’s technique in a small laboratory equipped with machines dated to the beginning of the ‘900.</p>\n<p><br />Like the lifeblood makes the plant evolve, so FLOEMA gives part of its income to PLAN INTERNATIONAL, a charity that works hard to eliminate the child brides phenomenon.</p>"
+                }
+              ]
+            },
+            {
+              "frameId": 1626654,
+              "frameType": "gallery",
+              "frameDataId": 1254156,
+              "frameStatus": 1,
+              "component": "gallery-carousel",
+              "extra": null,
+              "grid": 5,
+              "frameOrigin": null,
+              "action": null,
+              "actionType": 0,
+              "subPagesCategories": [
+                
+              ],
+              "frameContent": {
+                "text": null,
+                "showText": "0",
+                "items": [
+                  {
+                    "type": "image",
+                    "id": 1628148,
+                    "image": {
+                      "url": "uploads/site/4287/image/2021/09/19/10.jpg",
+                      "width": "1133",
+                      "height": "1600",
+                      "alt": null
+                    },
+                    "title": null,
+                    "subtitle": null,
+                    "href": null,
+                    "embed": null,
+                    "embedFile": null,
+                    "target": "_self",
+                    "button": false,
+                    "buttonText": null,
+                    "page": null,
+                    "likes": 0,
+                    "comments": 0,
+                    "location": null,
+                    "date": null,
+                    "autoplay": false,
+                    "expand": false,
+                    "focalPoint": {
+                      "x": 50,
+                      "y": 50
+                    }
+                  },
+                  {
+                    "type": "image",
+                    "id": 1628149,
+                    "image": {
+                      "url": "uploads/site/4287/image/2021/09/19/prizm-effect-def.png",
+                      "width": "960",
+                      "height": "599",
+                      "alt": null
+                    },
+                    "title": null,
+                    "subtitle": null,
+                    "href": null,
+                    "embed": null,
+                    "embedFile": null,
+                    "target": "_self",
+                    "button": false,
+                    "buttonText": null,
+                    "page": null,
+                    "likes": 0,
+                    "comments": 0,
+                    "location": null,
+                    "date": null,
+                    "autoplay": false,
+                    "expand": false,
+                    "focalPoint": {
+                      "x": 50,
+                      "y": 50
+                    }
+                  }
+                ]
+              }
+            }
+          ],
+          "mainImage": {
+            "url": null,
+            "width": null,
+            "height": null,
+            "class": null
+          }
+        },
+        {
+          "frameId": 1626655,
+          "frameType": "post",
+          "frameDataId": 368601,
+          "frameStatus": 1,
+          "component": "about-startcrop",
+          "extra": null,
+          "grid": 12,
+          "frameOrigin": null,
+          "action": null,
+          "actionType": 0,
+          "subPagesCategories": [
+            
+          ],
+          "frameContent": [
+            {
+              "frameId": 1626656,
+              "frameType": "container",
+              "frameDataId": 1254159,
+              "frameStatus": 1,
+              "component": null,
+              "extra": null,
+              "grid": 7,
+              "frameOrigin": null,
+              "action": null,
+              "actionType": 0,
+              "subPagesCategories": [
+                
+              ],
+              "frameContent": [
+                {
+                  "frameId": 1626657,
+                  "frameType": "title",
+                  "frameDataId": 1254157,
+                  "frameStatus": 1,
+                  "component": null,
+                  "extra": null,
+                  "grid": 12,
+                  "frameOrigin": null,
+                  "action": null,
+                  "actionType": 0,
+                  "subPagesCategories": [
+                    
+                  ],
+                  "frameContent": null
+                },
+                {
+                  "frameId": 1626658,
+                  "frameType": "text",
+                  "frameDataId": 1254158,
+                  "frameStatus": 1,
+                  "component": "bio1",
+                  "extra": null,
+                  "grid": 12,
+                  "frameOrigin": null,
+                  "action": null,
+                  "actionType": 0,
+                  "subPagesCategories": [
+                    
+                  ],
+                  "frameContent": null
+                }
+              ]
+            },
+            {
+              "frameId": 1626659,
+              "frameType": "gallery",
+              "frameDataId": 1254160,
+              "frameStatus": 1,
+              "component": "gallery-carousel",
+              "extra": null,
+              "grid": 5,
+              "frameOrigin": null,
+              "action": null,
+              "actionType": 0,
+              "subPagesCategories": [
+                
+              ],
+              "frameContent": {
+                "text": "The surprise of what is possible to make with a simple  and thin thread.",
+                "showText": "1",
+                "items": [
+                  {
+                    "type": "image",
+                    "id": 1628150,
+                    "image": {
+                      "url": "uploads/site/4287/image/2021/09/19/i.jpg",
+                      "width": "1133",
+                      "height": "1600",
+                      "alt": null
+                    },
+                    "title": null,
+                    "subtitle": null,
+                    "href": null,
+                    "embed": null,
+                    "embedFile": null,
+                    "target": "_self",
+                    "button": false,
+                    "buttonText": null,
+                    "page": null,
+                    "likes": 0,
+                    "comments": 0,
+                    "location": null,
+                    "date": null,
+                    "autoplay": false,
+                    "expand": false,
+                    "focalPoint": {
+                      "x": 50,
+                      "y": 50
+                    }
+                  },
+                  {
+                    "type": "image",
+                    "id": 1628151,
+                    "image": {
+                      "url": "uploads/site/4287/image/2021/09/19/d.jpg",
+                      "width": "1133",
+                      "height": "1600",
+                      "alt": null
+                    },
+                    "title": null,
+                    "subtitle": null,
+                    "href": null,
+                    "embed": null,
+                    "embedFile": null,
+                    "target": "_self",
+                    "button": false,
+                    "buttonText": null,
+                    "page": null,
+                    "likes": 0,
+                    "comments": 0,
+                    "location": null,
+                    "date": null,
+                    "autoplay": false,
+                    "expand": false,
+                    "focalPoint": {
+                      "x": 50,
+                      "y": 50
+                    }
+                  },
+                  {
+                    "type": "image",
+                    "id": 1628152,
+                    "image": {
+                      "url": "uploads/site/4287/image/2021/09/19/c.jpg",
+                      "width": "1133",
+                      "height": "1600",
+                      "alt": null
+                    },
+                    "title": null,
+                    "subtitle": null,
+                    "href": null,
+                    "embed": null,
+                    "embedFile": null,
+                    "target": "_self",
+                    "button": false,
+                    "buttonText": null,
+                    "page": null,
+                    "likes": 0,
+                    "comments": 0,
+                    "location": null,
+                    "date": null,
+                    "autoplay": false,
+                    "expand": false,
+                    "focalPoint": {
+                      "x": 50,
+                      "y": 50
+                    }
+                  },
+                  {
+                    "type": "image",
+                    "id": 1628153,
+                    "image": {
+                      "url": "uploads/site/4287/image/2021/09/19/f.jpg",
+                      "width": "1133",
+                      "height": "1600",
+                      "alt": null
+                    },
+                    "title": null,
+                    "subtitle": null,
+                    "href": null,
+                    "embed": null,
+                    "embedFile": null,
+                    "target": "_self",
+                    "button": false,
+                    "buttonText": null,
+                    "page": null,
+                    "likes": 0,
+                    "comments": 0,
+                    "location": null,
+                    "date": null,
+                    "autoplay": false,
+                    "expand": false,
+                    "focalPoint": {
+                      "x": 50,
+                      "y": 50
+                    }
+                  },
+                  {
+                    "type": "image",
+                    "id": 1628154,
+                    "image": {
+                      "url": "uploads/site/4287/image/2021/09/19/g.jpg",
+                      "width": "1133",
+                      "height": "1600",
+                      "alt": null
+                    },
+                    "title": null,
+                    "subtitle": null,
+                    "href": null,
+                    "embed": null,
+                    "embedFile": null,
+                    "target": "_self",
+                    "button": false,
+                    "buttonText": null,
+                    "page": null,
+                    "likes": 0,
+                    "comments": 0,
+                    "location": null,
+                    "date": null,
+                    "autoplay": false,
+                    "expand": false,
+                    "focalPoint": {
+                      "x": 50,
+                      "y": 50
+                    }
+                  },
+                  {
+                    "type": "image",
+                    "id": 1628155,
+                    "image": {
+                      "url": "uploads/site/4287/image/2021/09/19/h.jpg",
+                      "width": "1133",
+                      "height": "1600",
+                      "alt": null
+                    },
+                    "title": null,
+                    "subtitle": null,
+                    "href": null,
+                    "embed": null,
+                    "embedFile": null,
+                    "target": "_self",
+                    "button": false,
+                    "buttonText": null,
+                    "page": null,
+                    "likes": 0,
+                    "comments": 0,
+                    "location": null,
+                    "date": null,
+                    "autoplay": false,
+                    "expand": false,
+                    "focalPoint": {
+                      "x": 50,
+                      "y": 50
+                    }
+                  },
+                  {
+                    "type": "image",
+                    "id": 1628156,
+                    "image": {
+                      "url": "uploads/site/4287/image/2021/09/19/b.jpg",
+                      "width": "1133",
+                      "height": "1600",
+                      "alt": null
+                    },
+                    "title": null,
+                    "subtitle": null,
+                    "href": null,
+                    "embed": null,
+                    "embedFile": null,
+                    "target": "_self",
+                    "button": false,
+                    "buttonText": null,
+                    "page": null,
+                    "likes": 0,
+                    "comments": 0,
+                    "location": null,
+                    "date": null,
+                    "autoplay": false,
+                    "expand": false,
+                    "focalPoint": {
+                      "x": 50,
+                      "y": 50
+                    }
+                  },
+                  {
+                    "type": "image",
+                    "id": 1628157,
+                    "image": {
+                      "url": "uploads/site/4287/image/2021/09/19/a.jpg",
+                      "width": "1133",
+                      "height": "1600",
+                      "alt": null
+                    },
+                    "title": null,
+                    "subtitle": null,
+                    "href": null,
+                    "embed": null,
+                    "embedFile": null,
+                    "target": "_self",
+                    "button": false,
+                    "buttonText": null,
+                    "page": null,
+                    "likes": 0,
+                    "comments": 0,
+                    "location": null,
+                    "date": null,
+                    "autoplay": false,
+                    "expand": false,
+                    "focalPoint": {
+                      "x": 50,
+                      "y": 50
+                    }
+                  },
+                  {
+                    "type": "image",
+                    "id": 1628158,
+                    "image": {
+                      "url": "uploads/site/4287/image/2021/09/19/12.jpg",
+                      "width": "1133",
+                      "height": "1600",
+                      "alt": null
+                    },
+                    "title": null,
+                    "subtitle": null,
+                    "href": null,
+                    "embed": null,
+                    "embedFile": null,
+                    "target": "_self",
+                    "button": false,
+                    "buttonText": null,
+                    "page": null,
+                    "likes": 0,
+                    "comments": 0,
+                    "location": null,
+                    "date": null,
+                    "autoplay": false,
+                    "expand": false,
+                    "focalPoint": {
+                      "x": 50,
+                      "y": 50
+                    }
+                  },
+                  {
+                    "type": "image",
+                    "id": 1628159,
+                    "image": {
+                      "url": "uploads/site/4287/image/2021/09/19/11.jpg",
+                      "width": "1133",
+                      "height": "1600",
+                      "alt": null
+                    },
+                    "title": null,
+                    "subtitle": null,
+                    "href": null,
+                    "embed": null,
+                    "embedFile": null,
+                    "target": "_self",
+                    "button": false,
+                    "buttonText": null,
+                    "page": null,
+                    "likes": 0,
+                    "comments": 0,
+                    "location": null,
+                    "date": null,
+                    "autoplay": false,
+                    "expand": false,
+                    "focalPoint": {
+                      "x": 50,
+                      "y": 50
+                    }
+                  },
+                  {
+                    "type": "image",
+                    "id": 1628160,
+                    "image": {
+                      "url": "uploads/site/4287/image/2021/09/19/e.jpg",
+                      "width": "1133",
+                      "height": "1600",
+                      "alt": null
+                    },
+                    "title": null,
+                    "subtitle": null,
+                    "href": null,
+                    "embed": null,
+                    "embedFile": null,
+                    "target": "_self",
+                    "button": false,
+                    "buttonText": null,
+                    "page": null,
+                    "likes": 0,
+                    "comments": 0,
+                    "location": null,
+                    "date": null,
+                    "autoplay": false,
+                    "expand": false,
+                    "focalPoint": {
+                      "x": 50,
+                      "y": 50
+                    }
+                  },
+                  {
+                    "type": "image",
+                    "id": 1628161,
+                    "image": {
+                      "url": "uploads/site/4287/image/2021/09/19/10.jpg",
+                      "width": "1133",
+                      "height": "1600",
+                      "alt": null
+                    },
+                    "title": null,
+                    "subtitle": null,
+                    "href": null,
+                    "embed": null,
+                    "embedFile": null,
+                    "target": "_self",
+                    "button": false,
+                    "buttonText": null,
+                    "page": null,
+                    "likes": 0,
+                    "comments": 0,
+                    "location": null,
+                    "date": null,
+                    "autoplay": false,
+                    "expand": false,
+                    "focalPoint": {
+                      "x": 50,
+                      "y": 50
+                    }
+                  },
+                  {
+                    "type": "image",
+                    "id": 1628162,
+                    "image": {
+                      "url": "uploads/site/4287/image/2021/09/19/9.jpg",
+                      "width": "1133",
+                      "height": "1600",
+                      "alt": null
+                    },
+                    "title": null,
+                    "subtitle": null,
+                    "href": null,
+                    "embed": null,
+                    "embedFile": null,
+                    "target": "_self",
+                    "button": false,
+                    "buttonText": null,
+                    "page": null,
+                    "likes": 0,
+                    "comments": 0,
+                    "location": null,
+                    "date": null,
+                    "autoplay": false,
+                    "expand": false,
+                    "focalPoint": {
+                      "x": 50,
+                      "y": 50
+                    }
+                  },
+                  {
+                    "type": "image",
+                    "id": 1628163,
+                    "image": {
+                      "url": "uploads/site/4287/image/2021/09/19/4.jpg",
+                      "width": "1133",
+                      "height": "1600",
+                      "alt": null
+                    },
+                    "title": null,
+                    "subtitle": null,
+                    "href": null,
+                    "embed": null,
+                    "embedFile": null,
+                    "target": "_self",
+                    "button": false,
+                    "buttonText": null,
+                    "page": null,
+                    "likes": 0,
+                    "comments": 0,
+                    "location": null,
+                    "date": null,
+                    "autoplay": false,
+                    "expand": false,
+                    "focalPoint": {
+                      "x": 50,
+                      "y": 50
+                    }
+                  },
+                  {
+                    "type": "image",
+                    "id": 1628164,
+                    "image": {
+                      "url": "uploads/site/4287/image/2021/09/19/3.jpg",
+                      "width": "1133",
+                      "height": "1600",
+                      "alt": null
+                    },
+                    "title": null,
+                    "subtitle": null,
+                    "href": null,
+                    "embed": null,
+                    "embedFile": null,
+                    "target": "_self",
+                    "button": false,
+                    "buttonText": null,
+                    "page": null,
+                    "likes": 0,
+                    "comments": 0,
+                    "location": null,
+                    "date": null,
+                    "autoplay": false,
+                    "expand": false,
+                    "focalPoint": {
+                      "x": 50,
+                      "y": 50
+                    }
+                  },
+                  {
+                    "type": "image",
+                    "id": 1628165,
+                    "image": {
+                      "url": "uploads/site/4287/image/2021/09/19/8.jpg",
+                      "width": "1133",
+                      "height": "1600",
+                      "alt": null
+                    },
+                    "title": null,
+                    "subtitle": null,
+                    "href": null,
+                    "embed": null,
+                    "embedFile": null,
+                    "target": "_self",
+                    "button": false,
+                    "buttonText": null,
+                    "page": null,
+                    "likes": 0,
+                    "comments": 0,
+                    "location": null,
+                    "date": null,
+                    "autoplay": false,
+                    "expand": false,
+                    "focalPoint": {
+                      "x": 50,
+                      "y": 50
+                    }
+                  },
+                  {
+                    "type": "image",
+                    "id": 1628166,
+                    "image": {
+                      "url": "uploads/site/4287/image/2021/09/19/7.jpg",
+                      "width": "1133",
+                      "height": "1600",
+                      "alt": null
+                    },
+                    "title": null,
+                    "subtitle": null,
+                    "href": null,
+                    "embed": null,
+                    "embedFile": null,
+                    "target": "_self",
+                    "button": false,
+                    "buttonText": null,
+                    "page": null,
+                    "likes": 0,
+                    "comments": 0,
+                    "location": null,
+                    "date": null,
+                    "autoplay": false,
+                    "expand": false,
+                    "focalPoint": {
+                      "x": 50,
+                      "y": 50
+                    }
+                  },
+                  {
+                    "type": "image",
+                    "id": 1628167,
+                    "image": {
+                      "url": "uploads/site/4287/image/2021/09/19/6.jpg",
+                      "width": "1265",
+                      "height": "1600",
+                      "alt": null
+                    },
+                    "title": null,
+                    "subtitle": null,
+                    "href": null,
+                    "embed": null,
+                    "embedFile": null,
+                    "target": "_self",
+                    "button": false,
+                    "buttonText": null,
+                    "page": null,
+                    "likes": 0,
+                    "comments": 0,
+                    "location": null,
+                    "date": null,
+                    "autoplay": false,
+                    "expand": false,
+                    "focalPoint": {
+                      "x": 50,
+                      "y": 50
+                    }
+                  },
+                  {
+                    "type": "image",
+                    "id": 1628168,
+                    "image": {
+                      "url": "uploads/site/4287/image/2021/09/19/5.jpg",
+                      "width": "1133",
+                      "height": "1600",
+                      "alt": null
+                    },
+                    "title": null,
+                    "subtitle": null,
+                    "href": null,
+                    "embed": null,
+                    "embedFile": null,
+                    "target": "_self",
+                    "button": false,
+                    "buttonText": null,
+                    "page": null,
+                    "likes": 0,
+                    "comments": 0,
+                    "location": null,
+                    "date": null,
+                    "autoplay": false,
+                    "expand": false,
+                    "focalPoint": {
+                      "x": 50,
+                      "y": 50
+                    }
+                  },
+                  {
+                    "type": "image",
+                    "id": 1628169,
+                    "image": {
+                      "url": "uploads/site/4287/image/2021/09/19/1.jpg",
+                      "width": "1133",
+                      "height": "1600",
+                      "alt": null
+                    },
+                    "title": null,
+                    "subtitle": null,
+                    "href": null,
+                    "embed": null,
+                    "embedFile": null,
+                    "target": "_self",
+                    "button": false,
+                    "buttonText": null,
+                    "page": null,
+                    "likes": 0,
+                    "comments": 0,
+                    "location": null,
+                    "date": null,
+                    "autoplay": false,
+                    "expand": false,
+                    "focalPoint": {
+                      "x": 50,
+                      "y": 50
+                    }
+                  },
+                  {
+                    "type": "image",
+                    "id": 1628170,
+                    "image": {
+                      "url": "uploads/site/4287/image/2021/09/19/2.jpg",
+                      "width": "1133",
+                      "height": "1600",
+                      "alt": null
+                    },
+                    "title": null,
+                    "subtitle": null,
+                    "href": null,
+                    "embed": null,
+                    "embedFile": null,
+                    "target": "_self",
+                    "button": false,
+                    "buttonText": null,
+                    "page": null,
+                    "likes": 0,
+                    "comments": 0,
+                    "location": null,
+                    "date": null,
+                    "autoplay": false,
+                    "expand": false,
+                    "focalPoint": {
+                      "x": 50,
+                      "y": 50
+                    }
+                  }
+                ]
+              }
+            }
+          ],
+          "mainImage": {
+            "url": null,
+            "width": null,
+            "height": null,
+            "class": null
+          }
+        },
+        {
+          "frameId": 1626660,
+          "frameType": "post",
+          "frameDataId": 368602,
+          "frameStatus": 1,
+          "component": "about-startcrop",
+          "extra": null,
+          "grid": 12,
+          "frameOrigin": null,
+          "action": null,
+          "actionType": 0,
+          "subPagesCategories": [
+            
+          ],
+          "frameContent": [
+            {
+              "frameId": 1626661,
+              "frameType": "container",
+              "frameDataId": 1254163,
+              "frameStatus": 1,
+              "component": null,
+              "extra": null,
+              "grid": 7,
+              "frameOrigin": null,
+              "action": null,
+              "actionType": 0,
+              "subPagesCategories": [
+                
+              ],
+              "frameContent": [
+                {
+                  "frameId": 1626662,
+                  "frameType": "title",
+                  "frameDataId": 1254161,
+                  "frameStatus": 1,
+                  "component": null,
+                  "extra": null,
+                  "grid": 12,
+                  "frameOrigin": null,
+                  "action": null,
+                  "actionType": 0,
+                  "subPagesCategories": [
+                    
+                  ],
+                  "frameContent": "JEWELRY CARE"
+                },
+                {
+                  "frameId": 1626663,
+                  "frameType": "text",
+                  "frameDataId": 1254162,
+                  "frameStatus": 1,
+                  "component": "bio1",
+                  "extra": null,
+                  "grid": 12,
+                  "frameOrigin": null,
+                  "action": null,
+                  "actionType": 0,
+                  "subPagesCategories": [
+                    
+                  ],
+                  "frameContent": "<p>All FLOEMA jewels are exclusively realized using precious metals: 925 silver (pure for the Filigree) and 18kt gold. All metals are subjected to a natural oxidation process, that depends either on natural factors like oxygen in the air, the salt in the sea, sunlight, skin ph, or on chemical factors, like creams and perfumes.</p>\n<p> <br />Please find two ways to clean gold and silver with natural ingredients,</p>\n<p>To make your piece return to its original condition:</p>\n<p>Gold is slightly subjected to the oxidation process. To make your jewel shine again put your jewels in a solution of half cup of white vinegar and salt for at least 30 minutes.</p>\n<p>With a white cotton soft cloth dipped in the solution first brush your piece and then rinse it with plenty of water and voila!</p>\n<p> <br />To take the oxidation off silver you have to use one ingredient only: bicarbonate.</p>\n<p>Pour 250ml of lukewarm water and 5 spoons of bicarbonate in a container. Mixed until it is melted. Leave your silver jewels in the solution over the night, then brush them with a toothbrush until they shine again. Finally, rinse and dry with soft cloth.</p>"
+                }
+              ]
+            },
+            {
+              "frameId": 1626664,
+              "frameType": "gallery",
+              "frameDataId": 1254164,
+              "frameStatus": 1,
+              "component": "gallery-carousel",
+              "extra": null,
+              "grid": 5,
+              "frameOrigin": null,
+              "action": null,
+              "actionType": 0,
+              "subPagesCategories": [
+                
+              ],
+              "frameContent": {
+                "text": null,
+                "showText": "0",
+                "items": [
+                  {
+                    "type": "image",
+                    "id": 1628171,
+                    "image": {
+                      "url": "uploads/site/4287/image/2021/09/19/dsc03908-edit.png",
+                      "width": "842",
+                      "height": "520",
+                      "alt": null
+                    },
+                    "title": null,
+                    "subtitle": null,
+                    "href": null,
+                    "embed": null,
+                    "embedFile": null,
+                    "target": "_self",
+                    "button": false,
+                    "buttonText": null,
+                    "page": null,
+                    "likes": 0,
+                    "comments": 0,
+                    "location": null,
+                    "date": null,
+                    "autoplay": false,
+                    "expand": false,
+                    "focalPoint": {
+                      "x": 50,
+                      "y": 50
+                    }
+                  }
+                ]
+              }
+            }
+          ],
+          "mainImage": {
+            "url": null,
+            "width": null,
+            "height": null,
+            "class": null
+          }
+        },
+        {
+          "frameId": 1626583,
+          "frameType": "post",
+          "frameDataId": 368598,
+          "frameStatus": 1,
+          "component": "about-startcrop",
+          "extra": null,
+          "grid": 12,
+          "frameOrigin": null,
+          "action": null,
+          "actionType": 0,
+          "subPagesCategories": [
+            
+          ],
+          "frameContent": [
+            {
+              "frameId": 1626584,
+              "frameType": "container",
+              "frameDataId": 1254090,
+              "frameStatus": 1,
+              "component": null,
+              "extra": null,
+              "grid": 7,
+              "frameOrigin": null,
+              "action": null,
+              "actionType": 0,
+              "subPagesCategories": [
+                
+              ],
+              "frameContent": [
+                {
+                  "frameId": 1626585,
+                  "frameType": "title",
+                  "frameDataId": 1254088,
+                  "frameStatus": 1,
+                  "component": null,
+                  "extra": null,
+                  "grid": 12,
+                  "frameOrigin": null,
+                  "action": null,
+                  "actionType": 0,
+                  "subPagesCategories": [
+                    
+                  ],
+                  "frameContent": "SUSTAINABILITY"
+                },
+                {
+                  "frameId": 1626586,
+                  "frameType": "text",
+                  "frameDataId": 1254089,
+                  "frameStatus": 1,
+                  "component": "bio1",
+                  "extra": null,
+                  "grid": 12,
+                  "frameOrigin": null,
+                  "action": null,
+                  "actionType": 0,
+                  "subPagesCategories": [
+                    
+                  ],
+                  "frameContent": "<p>FLOEMA engages in its own small way to choose green solutions as much as possible.</p>\n<p>You will receive each piece in a handmade box realized by Florentine typography using eco-friendly paper (made by 90% of pure cellulose and 10% by cotton fibers),</p>\n<p>in a recycled and 100% recyclable parcel.</p>\n<p><br />The business cards are realized with recycled cotton fiber cardboard.<br />All the pieces are created in a small laboratory in the Florentine countryside, preferring using green materials and recycling precious materials.</p>"
+                }
+              ]
+            },
+            {
+              "frameId": 1626587,
+              "frameType": "gallery",
+              "frameDataId": 1254091,
+              "frameStatus": 1,
+              "component": "gallery-carousel",
+              "extra": null,
+              "grid": 5,
+              "frameOrigin": null,
+              "action": null,
+              "actionType": 0,
+              "subPagesCategories": [
+                
+              ],
+              "frameContent": {
+                "text": null,
+                "showText": "0",
+                "items": [
+                  {
+                    "type": "image",
+                    "id": 1628172,
+                    "image": {
+                      "url": "uploads/site/4287/image/2021/09/19/b.jpg",
+                      "width": "1133",
+                      "height": "1600",
+                      "alt": null
+                    },
+                    "title": null,
+                    "subtitle": null,
+                    "href": null,
+                    "embed": null,
+                    "embedFile": null,
+                    "target": "_self",
+                    "button": false,
+                    "buttonText": null,
+                    "page": null,
+                    "likes": 0,
+                    "comments": 0,
+                    "location": null,
+                    "date": null,
+                    "autoplay": false,
+                    "expand": false,
+                    "focalPoint": {
+                      "x": 50,
+                      "y": 50
+                    }
+                  }
+                ]
+              }
+            }
+          ],
+          "mainImage": {
+            "url": null,
+            "width": null,
+            "height": null,
+            "class": null
+          }
+        },
+        {
+          "frameId": 1626517,
+          "frameType": "post",
+          "frameDataId": 368597,
+          "frameStatus": 1,
+          "component": "about-startcrop",
+          "extra": null,
+          "grid": 12,
+          "frameOrigin": null,
+          "action": null,
+          "actionType": 0,
+          "subPagesCategories": [
+            
+          ],
+          "frameContent": [
+            {
+              "frameId": 1626518,
+              "frameType": "container",
+              "frameDataId": 1254025,
+              "frameStatus": 1,
+              "component": null,
+              "extra": null,
+              "grid": 7,
+              "frameOrigin": null,
+              "action": null,
+              "actionType": 0,
+              "subPagesCategories": [
+                
+              ],
+              "frameContent": [
+                {
+                  "frameId": 1626519,
+                  "frameType": "title",
+                  "frameDataId": 1254023,
+                  "frameStatus": 1,
+                  "component": null,
+                  "extra": null,
+                  "grid": 12,
+                  "frameOrigin": null,
+                  "action": null,
+                  "actionType": 0,
+                  "subPagesCategories": [
+                    
+                  ],
+                  "frameContent": "Instagram"
+                },
+                {
+                  "frameId": 1626520,
+                  "frameType": "text",
+                  "frameDataId": 1254024,
+                  "frameStatus": 1,
+                  "component": "bio1",
+                  "extra": null,
+                  "grid": 12,
+                  "frameOrigin": null,
+                  "action": null,
+                  "actionType": 0,
+                  "subPagesCategories": [
+                    
+                  ],
+                  "frameContent": null
+                }
+              ]
+            },
+            {
+              "frameId": 1626521,
+              "frameType": "gallery",
+              "frameDataId": 1254026,
+              "frameStatus": 1,
+              "component": "gallery-carousel",
+              "extra": null,
+              "grid": 5,
+              "frameOrigin": null,
+              "action": null,
+              "actionType": 0,
+              "subPagesCategories": [
+                
+              ],
+              "frameContent": {
+                "text": null,
+                "showText": "0",
+                "items": [
+                  {
+                    "type": "image",
+                    "id": 1628173,
+                    "image": {
+                      "url": "uploads/site/4287/image/2021/09/19/f.jpg",
+                      "width": "1133",
+                      "height": "1600",
+                      "alt": null
+                    },
+                    "title": null,
+                    "subtitle": null,
+                    "href": null,
+                    "embed": null,
+                    "embedFile": null,
+                    "target": "_self",
+                    "button": false,
+                    "buttonText": null,
+                    "page": null,
+                    "likes": 0,
+                    "comments": 0,
+                    "location": null,
+                    "date": null,
+                    "autoplay": false,
+                    "expand": false,
+                    "focalPoint": {
+                      "x": 50,
+                      "y": 50
+                    }
+                  },
+                  {
+                    "type": "image",
+                    "id": 1628174,
+                    "image": {
+                      "url": "uploads/site/4287/image/2021/09/19/e.jpg",
+                      "width": "1133",
+                      "height": "1600",
+                      "alt": null
+                    },
+                    "title": null,
+                    "subtitle": null,
+                    "href": null,
+                    "embed": null,
+                    "embedFile": null,
+                    "target": "_self",
+                    "button": false,
+                    "buttonText": null,
+                    "page": null,
+                    "likes": 0,
+                    "comments": 0,
+                    "location": null,
+                    "date": null,
+                    "autoplay": false,
+                    "expand": false,
+                    "focalPoint": {
+                      "x": 50,
+                      "y": 50
+                    }
+                  }
+                ]
+              }
+            }
+          ],
+          "mainImage": {
+            "url": null,
+            "width": null,
+            "height": null,
+            "class": null
+          }
+        }
+      ],
+      "subpagesCategories": [
+        
+      ],
+      "category": [
+        
+      ],
+      "position": 999
+    }
+  }
+}
