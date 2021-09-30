@@ -7,8 +7,8 @@
       </h1>
     </template>
     <template v-if="loading">
-    <Menu v-show="show"/>
-    <HomeFloema v-show="show"/>
+    <Menu />
+    <HomeFloema />
     </template>
   </div>
 </template>
