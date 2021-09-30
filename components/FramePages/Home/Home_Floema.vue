@@ -52,7 +52,7 @@ export default {
   },
   created(){
     console.log(this.totalPost)
-   this.homeData = this.totalPost[0].content.content[0].frameContent
+   this.homeData = this.totalPost.content.content[0].frameContent
    console.log(this.homeData)
   },
   methods: {

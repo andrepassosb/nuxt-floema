@@ -35,8 +35,6 @@ export default {
   },
     async asyncData ({ $axios, params }) {
     const post  = await $axios.$get(`https://proxy.ulisite.com/api/site/4287/post/366938`)
-    this.$store.dispatch("getPostData", [posts]);
-    this.loading=true
     return { post }
   },
   computed: {
@@ -45,8 +43,24 @@ export default {
     }),
     ...mapGetters( ["activePostContent"]),
   },
-  created(){
+  mounted(){
     // this.populate()
+    this.$store.dispatch("getPostData", [this.post]);
+    console.log('created',this.totalPost)
+    this.loading=true
+    // 
+  },
+  watch:{
+    posts: {
+      // This will let Vue know to look inside the array
+      deep: true,
+
+      // We have to move our method to a handler field
+      handler(){
+        this.loading=true
+        console.log('The list of colours has changed!');
+      }
+    }
   },
   methods:{
     async populate() {
