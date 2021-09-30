@@ -11,12 +11,18 @@ export const getters = {
 export const mutations = {
   populateActivePost(state, payload) {
     state.totalPost = payload;
-    console.log(payload)
+  },
+  pushActivePost(state, payload) {
+    state.totalPost.push(payload);
+    console.log('push',state.totalPost)
   },
 }
 
 export const actions = {
   getPostData(context, [postData]) {
     this.commit("populateActivePost", postData);
+  },
+  pushPostData(context, postData) {
+    this.commit("pushActivePost", postData);
   },
 }

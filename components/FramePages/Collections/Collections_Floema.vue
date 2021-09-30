@@ -10,7 +10,7 @@
             v-if="frame.frameType == 'title'"
             :content="frame" />
       </template>
-          <WaveGallery/>
+          <!-- <WaveGallery/> -->
           
       <div class="collections__content">
         <template data-each="collection, index in collections">

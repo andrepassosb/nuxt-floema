@@ -31,8 +31,6 @@ import VerticalTitle from "@/components/Text/Title/Vertical_Floema";
 import Button from "@/components/Buttons/Button_Floema";
 import { mapGetters, mapState } from "vuex";
 
-import axios from 'axios'
-
 export default {
   data() {
     return {
@@ -51,29 +49,9 @@ export default {
     ...mapGetters( ["activePostContent"]),
   },
   created(){
-    console.log(this.totalPost)
-   this.homeData = this.totalPost.content.content[0].frameContent
-   console.log(this.homeData)
+   this.homeData = this.totalPost[0].content.content[0].frameContent
   },
   methods: {
-		requestApiData(url, type, data = '') {
-			return new Promise(resolve => {
-				axios({
-					method: type,
-					url: `https://proxy.ulisite.com/api${url}`,
-					data: data,
-				}).then(response => {
-					resolve(response.data)
-				}).catch(error => {
-					resolve(error)
-				})
-			});
-		},
-    async requestAbout(){
-      const url = "/site/4287/post/367472"
-      const about = await this.requestApiData(url, 'get')
-      this.homeData = about.content.content
-    },
     verifyType(content){
       let checkType = {
         gallery : false,

@@ -1,14 +1,14 @@
 <template>
   <div>
-    <template v-if="!loading">
-    <h1 style="z-index: 9999;
+    <template >
+    <h1 v-show="!show" style="z-index: 9999;
     position: absolute;">
       Sem posts
       </h1>
     </template>
-    <template v-else>
-    <Menu/>
-    <HomeFloema/>
+    <template v-if="loading">
+    <Menu v-show="show"/>
+    <HomeFloema v-show="show"/>
     </template>
   </div>
 </template>
@@ -17,9 +17,8 @@
 import HomeFloema from "@/components/FramePages/Home/Home_Floema";
 import Menu from "@/components/Menus/Navigation_Floema";
 import db_section from'../static/db_section.json';
-
 import axios from 'axios'
-import { mapGetters, mapState } from "vuex";
+import { mapState } from "vuex";
 
 export default {
   components:{
@@ -28,53 +27,48 @@ export default {
   },
   data() {
     return {
-      sections: [],
-      posts:[],
-      loading:false
+      loading:false,
+      show:false,
     };
   },
-    async asyncData ({ $axios, params }) {
-    const post  = await $axios.$get(`https://proxy.ulisite.com/api/site/4287/post/366938`)
-    return { post }
+    async asyncData ({ $axios, params, store } ) {
+      if(store.state.totalPost.length !== db_section.section.content.length){
+        console.log('totalPost',store.state.totalPost)
+      const home = 0
+      const sections = db_section.section.content
+      const site = 4287
+      let dataPost = []
+      dataPost[home]  = await $axios.$get(`https://proxy.ulisite.com/api/site/${site}/post/${sections[home].id}`)
+      store.dispatch("getPostData", [dataPost])
+      return { dataPost }
+      }
   },
   computed: {
     ...mapState( {
       totalPost: (state) => state.totalPost,
     }),
-    ...mapGetters( ["activePostContent"]),
   },
-  mounted(){
-    // this.populate()
-    this.$store.dispatch("getPostData", [this.post]);
-    console.log('created',this.totalPost)
+  created(){
     this.loading=true
-    // 
   },
-  watch:{
-    posts: {
-      // This will let Vue know to look inside the array
-      deep: true,
-
-      // We have to move our method to a handler field
-      handler(){
-        this.loading=true
-        console.log('The list of colours has changed!');
-      }
+  async mounted(){
+    this.show = true
+    console.log(this.totalPost.length,db_section.section.content.length)
+    if(this.totalPost.length !== db_section.section.content.length){
+      console.log('mounted')
+      const post = this.dataPost
+      const about = await this.requestPage(367472)
+      this.$store.dispatch("pushPostData", about);
+      const collection = await this.requestPage(366952)
+      this.$store.dispatch("pushPostData", collection);
+      this.show = true
+    }
+    else{
+      this.show = true
     }
   },
   methods:{
     async populate() {
-      if(this.totalPost.length == 0){
-        this.sections = db_section.section.content
-        for (let i = 0; i < this.sections.length; i++) {
-          const section = this.sections[i];
-          let post = await this.requestPage(366938)
-          this.posts.push(post)
-        }
-        this.$store.dispatch("getPostData", [this.posts]);
-        this.loading=true
-        
-      }
     },
     requestApiData(url, type, data = '') {
 			return new Promise(resolve => {
@@ -94,7 +88,6 @@ export default {
       const data = await this.requestApiData(url, 'get')
       return data
     },
-
   }
 }
 </script>
