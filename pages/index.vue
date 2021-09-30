@@ -32,7 +32,8 @@ export default {
     };
   },
     async asyncData ({ $axios, params, store } ) {
-      if(store.state.totalPost.length !== db_section.section.content.length){
+      if(store.state.totalPost.length !== 1){
+      // if(store.state.totalPost.length !== db_section.section.content.length){
         console.log('totalPost',store.state.totalPost)
       const home = 0
       const sections = db_section.section.content
@@ -54,7 +55,8 @@ export default {
   async mounted(){
     this.show = true
     console.log(this.totalPost.length,db_section.section.content.length)
-    if(this.totalPost.length !== db_section.section.content.length){
+    // if(this.totalPost.length !== db_section.section.content.length){
+    if(this.totalPost.length !== 1){
       console.log('mounted')
       const post = this.dataPost
       const about = await this.requestPage(367472)
