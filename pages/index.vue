@@ -108,7 +108,7 @@ table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+time, mark, audio, video, picture {
   margin: 0;
   padding: 0;
   border: 0;
@@ -117,7 +117,7 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-article, aside, details, figcaption, figure,
+article, aside, details, figcaption, figure, picture,
 footer, header, hgroup, menu, nav, section {
   display: block;
 }
