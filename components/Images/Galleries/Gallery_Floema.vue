@@ -5,7 +5,7 @@
     <template
       v-for="media,index in gallery"
     >
-      <!-- <figure
+      <figure
         :key="`media-${index}`"
         :class="`home__gallery__media home__gallery__media--${Math.round(index % 5 + 1)}`">
         <img 
@@ -13,14 +13,7 @@
           :alt="media.image.alt"
           :data-src="`https://dxemhjekrc4z1.cloudfront.net/fit-in/300x300/${media.image.url}`"
           :src="`https://dxemhjekrc4z1.cloudfront.net/fit-in/300x300/${media.image.url}`">
-      </figure> -->
-      <picture
-        :key="`media-${index}`"
-        :class="`home__gallery__media home__gallery__media--${Math.round(index % 5 + 1)}`">
-        <source type="image/webp" :srcset="`https://dxemhjekrc4z1.cloudfront.net/fit-in/filters:format(webp)/${media.image.url}`">
-        <source type="image/jpeg" :srcset="`https://dxemhjekrc4z1.cloudfront.net/${media.image.url}`">
-        <img class="home__gallery__media__image" :src="`https://dxemhjekrc4z1.cloudfront.net/${media.image.url}`" alt="media.image.alt">
-      </picture>
+      </figure>
     </template>
   </div>
 </template>
