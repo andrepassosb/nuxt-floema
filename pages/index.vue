@@ -1,7 +1,15 @@
 <template>
   <div>
+    <template v-if="!loading">
+    <h1 style="z-index: 9999;
+    position: absolute;">
+      Sem posts
+      </h1>
+    </template>
+    <template v-else>
     <Menu/>
     <HomeFloema/>
+    </template>
   </div>
 </template>
 
@@ -21,28 +29,33 @@ export default {
   data() {
     return {
       sections: [],
-      posts:[]
+      posts:[],
+      loading:false
     };
   },
-  async fetch() {
-    if(this.totalPost.length == 0){
-      this.sections = db_section.section.content
-      for (let i = 0; i < this.sections.length; i++) {
-        const section = this.sections[i];
-        let post = await this.requestPage(section.id)
-        this.posts.push(post)
-      }
-      this.$store.dispatch("getPostData", [this.posts]);
-    }
-  },
-  fetchOnServer: true,
   computed: {
     ...mapState( {
       totalPost: (state) => state.totalPost,
     }),
     ...mapGetters( ["activePostContent"]),
   },
+  created(){
+    this.busca()
+  },
   methods:{
+    async busca() {
+      if(this.totalPost.length == 0){
+        this.sections = db_section.section.content
+        for (let i = 0; i < this.sections.length; i++) {
+          const section = this.sections[i];
+          let post = await this.requestPage(366938)
+          this.posts.push(post)
+        }
+        this.$store.dispatch("getPostData", [this.posts]);
+        this.loading=true
+        
+      }
+    },
     requestApiData(url, type, data = '') {
 			return new Promise(resolve => {
 				axios({
