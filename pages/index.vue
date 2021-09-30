@@ -33,6 +33,12 @@ export default {
       loading:false
     };
   },
+    async asyncData ({ $axios, params }) {
+    const post  = await $axios.$get(`https://proxy.ulisite.com/api/site/4287/post/366938`)
+    this.$store.dispatch("getPostData", [posts]);
+    this.loading=true
+    return { post }
+  },
   computed: {
     ...mapState( {
       totalPost: (state) => state.totalPost,
@@ -40,10 +46,10 @@ export default {
     ...mapGetters( ["activePostContent"]),
   },
   created(){
-    this.busca()
+    // this.populate()
   },
   methods:{
-    async busca() {
+    async populate() {
       if(this.totalPost.length == 0){
         this.sections = db_section.section.content
         for (let i = 0; i < this.sections.length; i++) {
