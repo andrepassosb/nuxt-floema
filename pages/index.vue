@@ -1,48 +1,57 @@
 <template>
   <div>
     <template >
-    <h1 v-show="!show" style="z-index: 9999;
+    <h1 v-show="preloader" style="z-index: 9999;
     position: absolute;">
       Sem posts
       </h1>
     </template>
-    <template v-if="loading">
-    <Menu />
-    <HomeFloema />
-    </template>
+    <FramePages
+      v-if="dataPost && !loading"
+      :content="dataPost"/>
   </div>
 </template>
 
 <script>
-import HomeFloema from "@/components/FramePages/Home/Home_Floema";
-import Menu from "@/components/Menus/Navigation_Floema";
+import FramePages from "@/components/FramePages/FramePages.vue";
 import db_section from'../static/db_section.json';
-import axios from 'axios'
 import { mapState } from "vuex";
 
 export default {
   components:{
-    HomeFloema,
-    Menu
+    FramePages
   },
   data() {
     return {
-      loading:false,
-      show:false,
+      loading:true,
+      preloader:true,
     };
   },
     async asyncData ({ $axios, params, store } ) {
-      if(store.state.totalPost.length !== 1){
-      // if(store.state.totalPost.length !== db_section.section.content.length){
-        console.log('totalPost',store.state.totalPost)
-      const home = 0
+      const route = '/'
       const sections = db_section.section.content
+      const totalPost = store.state.totalPost
       const site = 4287
       let dataPost = []
-      dataPost[home]  = await $axios.$get(`https://proxy.ulisite.com/api/site/${site}/post/${sections[home].id}`)
-      store.dispatch("getPostData", [dataPost])
-      return { dataPost }
+      let get = true
+      let id = null
+      sections.forEach(section => {
+        if(section.route == route){
+          id = section.id
+          totalPost.forEach(element => {
+            if(element.content.postId == id){
+              get = false
+              dataPost = element
+            }
+          });
+        }
+        return true
+      });
+      if(get){
+        dataPost = await $axios.$get(`https://proxy.ulisite.com/api/site/${site}/post/${id}`)
+        store.dispatch("pushPostData", dataPost)
       }
+      return { dataPost }
   },
   computed: {
     ...mapState( {
@@ -50,47 +59,9 @@ export default {
     }),
   },
   created(){
-    this.loading=true
+    this.preloader = false
+    this.loading = false
   },
-  async mounted(){
-    this.show = true
-    console.log(this.totalPost.length,db_section.section.content.length)
-    // if(this.totalPost.length !== db_section.section.content.length){
-    if(this.totalPost.length !== 1){
-      console.log('mounted')
-      const post = this.dataPost
-      const about = await this.requestPage(367472)
-      this.$store.dispatch("pushPostData", about);
-      const collection = await this.requestPage(366952)
-      this.$store.dispatch("pushPostData", collection);
-      this.show = true
-    }
-    else{
-      this.show = true
-    }
-  },
-  methods:{
-    async populate() {
-    },
-    requestApiData(url, type, data = '') {
-			return new Promise(resolve => {
-				axios({
-					method: type,
-					url: `https://proxy.ulisite.com/api${url}`,
-					data: data,
-				}).then(response => {
-					resolve(response.data)
-				}).catch(error => {
-					resolve(error)
-				})
-			});
-		},
-    async requestPage(id){
-      const url = `/site/4287/post/${id}`
-      const data = await this.requestApiData(url, 'get')
-      return data
-    },
-  }
 }
 </script>
 

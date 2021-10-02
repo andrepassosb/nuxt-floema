@@ -12,7 +12,7 @@ export const mutations = {
   populateActivePost(state, payload) {
     state.totalPost = payload;
   },
-  pushActivePost(state, payload) {
+  pushActiveSite(state, payload) {
     state.totalPost.push(payload);
     console.log('push',state.totalPost)
   },
@@ -23,6 +23,6 @@ export const actions = {
     this.commit("populateActivePost", postData);
   },
   pushPostData(context, postData) {
-    this.commit("pushActivePost", postData);
+    this.commit("pushActiveSite", postData);
   },
 }

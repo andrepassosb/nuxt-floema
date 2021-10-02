@@ -1,5 +1,6 @@
 <template>
   <div class="home" data-background="#C97164" data-color="#F9F1E7">
+     <Menu/>
     <div class="home__wrapper">
       <template
         v-for="frame,index in homeData"
@@ -7,7 +8,7 @@
 
       <VerticalTitle
         :key="`frame-${index}`"
-        v-if="frame.frameType == 'title'"
+        v-if="frame.frameType == 'title' && frame.frameContent"
         :content="frame" />
 
       <Gallery
@@ -26,6 +27,7 @@
 </template>
 
 <script>
+import Menu from "@/components/Menus/Navigation_Floema";
 import Gallery from "@/components/Images/Galleries/Gallery_Floema";
 import VerticalTitle from "@/components/Text/Title/Vertical_Floema";
 import Button from "@/components/Buttons/Button_Floema";
@@ -40,7 +42,13 @@ export default {
   components:{
     Gallery,
     VerticalTitle,
-    Button
+    Button,
+    Menu
+  },
+  props:{
+    content:{
+      required: true
+    },
   },
   computed: {
     ...mapState( {
@@ -49,7 +57,7 @@ export default {
     ...mapGetters( ["activePostContent"]),
   },
   created(){
-   this.homeData = this.totalPost[0].content.content[0].frameContent
+   this.homeData = this.content.content.content[0].frameContent
   },
   methods: {
     verifyType(content){
