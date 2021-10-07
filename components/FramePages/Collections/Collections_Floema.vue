@@ -1,41 +1,43 @@
 <template>
-  <div class="collections" data-background="#BC978C" data-color="#F9F1E7">
-     <Menu/>
+  <div ref="container" class="collections" data-background="#BC978C" data-color="#F9F1E7">
+    <Menu/>
     <div class="collections__wrapper">
+      <template 
+       v-for="dataframe in dataCollection">
+
         <template
-          v-for="frame,index in dataCollection"
-        >
-          <VerticalTitle
-            :key="`frame-${index}`"
-            v-if="frame.frameType == 'title'"
-            :content="frame" />
-      </template>
-          <!-- <WaveGallery/> -->
-          
-      <div class="collections__content">
-        <template data-each="collection, index in collections">
-          <article
-            class="
-              collections_article
-              {index
-              ===
-              0
-              ?
-              'collections_article--active'
-              :
-              ''}
-            "
+          v-if="dataframe.frameContent[1].frameType == 'gallery'" >
+          <template
+            v-for="frame,index in dataframe.frameContent"
           >
-            <h2 class="collections_articletitle">
-              <span class="collectionsarticletitle_text">texte</span>
-            </h2>
-            <p class="collections_article_description">
-              collection.data.description.replace(/ /g, '&lt;br&gt;')
-            </p>
-          </article>
+            <VerticalTitle
+              :key="`frame-${index}`"
+              v-if="frame.frameType == 'title'"
+              :content="frame" />
+            <WaveGallery
+            :key="`frame-${index}`"
+            v-if="frame.frameType == 'gallery'"
+            :content="frame" />
+          </template>
         </template>
-      </div>
-      <div class="collections__mobile">
+
+      </template>
+    
+        <div
+          :key="`content-${index}`"
+          class="collections__content">
+          <template
+          v-for="dataframe,index in dataCollection">
+            <Article
+              v-if="dataframe.frameContent[1].frameType == 'text'"
+              :key="`article-${index}`"
+              :content="dataframe"
+              :index="index" />
+          </template>
+        </div>
+          
+
+      <!-- <div class="collections__mobile">
         <template data-each="collection, index in collections">
           <div class="collections_mobile_item">
             <div class="collections_mobileitem_label">
@@ -47,8 +49,9 @@
           </div>
         </template>
       </div>
-    </div>
-    <template data-each="product in products">
+    </div> -->
+
+   <!-- <template data-each="product in products">
       <article class="detail" data-background="#BC978C" data-color="#F9F1E7">
         <div class="detail__wrapper">
           <figure class="detail_media">
@@ -169,7 +172,8 @@
           </svg>
         </button>
       </article>
-    </template>
+    </template> -->
+    </div>
   </div>
 </template>
 
@@ -177,21 +181,27 @@
 <script>
 
 import Menu from "@/components/Menus/Navigation_Floema";
-import Gallery from "@/components/Images/Galleries/Gallery_Floema";
+import WaveGallery from "@/components/Images/Galleries/Wave_Floema";
 import VerticalTitle from "@/components/Text/Title/Vertical_Floema";
+import Article from "@/components/Text/Articles/Articles_Floema";
 import Button from "@/components/Buttons/Button_Floema";
 
+import animation from '../../../mixins/animation.js'
+
 export default {
+  name:'Collection',
+  mixins:[animation],
   data() {
     return {
       dataCollection: null,
     };
   },
   components:{
+    Article,
+    Button,
     Menu,
-    Gallery,
+    WaveGallery,
     VerticalTitle,
-    Button
   },
   props:{
     content:{
@@ -203,7 +213,8 @@ export default {
   fetch(){
   },
   mounted(){
-    this.dataCollection = this.content.content.content[0].frameContent
+    this.dataCollection = this.content.content.content
+    this.show(this.$refs.container)
   },
   methods: {
     verifyType(content){
@@ -256,7 +267,14 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
+.detail__button__icon, .detail__media__image, .collections__content, .collections__wrapper, .content, .detail, .collections {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
 .detail {
   align-items: center;
   display: flex;
@@ -278,13 +296,13 @@ export default {
     font-size: 3rem;
   }
 }
-.detail__information__item__description, .detail__information__highlight__text, .collections__article__description {
+.detail__information__item__description, .detail__information__highlight__text {
   font-size: 1.8rem;
   font-weight: 300;
   line-height: 1.5;
 }
 @media (max-width: 767px) {
-  .detail__information__item__description, .detail__information__highlight__text, .collections__article__description {
+  .detail__information__item__description, .detail__information__highlight__text {
     font-size: 2.8rem;
   }
 }
@@ -336,10 +354,7 @@ export default {
     font-size: 5.2rem;
   }
 }
-.collections__article__title {
-  font-family: "George X";
-  font-size: 6rem;
-}
+
 
 .detail__information__title {
   font-family: "George X";
@@ -434,97 +449,12 @@ export default {
   height: 28.8rem;
 }
 
-.collections__gallery {
-  /* visibility: hidden; */
-  z-index: 1;
-}
-
-.collections__gallery__wrapper {
-  align-items: center;
-  display: flex;
-  left: 50%;
-  position: absolute;
-  top: 50%;
-  transform: translate(-22.35rem, -50%);
-}
-
-.collections__gallery__link {
-  display: block;
-  padding: 0 5.3rem;
-}
-.collections__gallery__link:first-child {
-  padding-left: 0;
-}
-.collections__gallery__link:last-child {
-  padding-right: 0;
-}
-
-.collections__gallery__media {
-  height: 50.48rem;
-  position: relative;
-  /* visibility: hidden; */
-  width: 35.76rem;
-}
-
-.collections__gallery__media__image {
-  object-fit: cover;
-}
-
 @media (max-width: 767px) {
   .collections__content {
     display: none;
   }
 }
 
-.collections__article {
-  bottom: 8rem;
-  left: 8rem;
-  position: absolute;
-}
-
-.collections__article__title {
-  line-height: 1;
-  margin-bottom: 1.5rem;
-  overflow: hidden;
-}
-
-.collections__article__title__text {
-  display: inline-block;
-  transform: translateY(100%);
-  transition: transform 1s cubic-bezier(0.77, 0, 0.175, 1);
-}
-.collections__article--active .collections__article__title__text {
-  transform: translateY(0);
-  transition-delay: 1s;
-}
-
-.collections__article__description span {
-  display: inline-block;
-  overflow: hidden;
-  vertical-align: top;
-}
-.collections__article__description span span {
-  transform: translateY(100%);
-  transition: transform 1s cubic-bezier(0.77, 0, 0.175, 1);
-}
-.collections__article--active .collections__article__description span span {
-  transform: translateY(0);
-}
-.collections__article--active .collections__article__description span:nth-of-type(1) span {
-  transition-delay: 1.05s;
-}
-.collections__article--active .collections__article__description span:nth-of-type(2) span {
-  transition-delay: 1.1s;
-}
-.collections__article--active .collections__article__description span:nth-of-type(3) span {
-  transition-delay: 1.15s;
-}
-.collections__article--active .collections__article__description span:nth-of-type(4) span {
-  transition-delay: 1.2s;
-}
-.collections__article--active .collections__article__description span:nth-of-type(5) span {
-  transition-delay: 1.25s;
-}
 
 .collections__mobile {
   bottom: 5rem;

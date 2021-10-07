@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <div ref="container" data-background="#B2B8C3" data-color="#37384C">
     <Menu/>
-    <div class="about" data-background="#B2B8C3" data-color="#37384C">
+    <div class="about" >
       <div class="about__wrapper"
         v-if="aboutData"
       >
@@ -42,10 +42,13 @@ import Menu from "@/components/Menus/Navigation_Floema";
 import Gallery from "@/components/Images/Galleries/Carousel_Floema";
 import Description from "@/components/Images/Description/Description_Floema";
 import Highlight from "@/components/Images/Highlight/Highlight_Floema";
+import animation from '../../../mixins/animation.js'
 
 import axios from 'axios'
 
 export default {
+  name:'About',
+  mixins:[animation],
   data() {
     return {
       aboutData: null,
@@ -68,7 +71,7 @@ export default {
   fetch(){
   },
   mounted(){
-    // this.aboutData = db.about.content.content
+    this.show(this.$refs.container)
   },
   methods: {
 		requestApiData(url, type, data = '') {

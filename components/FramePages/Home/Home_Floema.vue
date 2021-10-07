@@ -1,5 +1,5 @@
 <template>
-  <div class="home" data-background="#C97164" data-color="#F9F1E7">
+  <div ref="container" class="home" data-background="#C97164" data-color="#F9F1E7">
      <Menu/>
     <div class="home__wrapper">
       <template
@@ -33,7 +33,10 @@ import VerticalTitle from "@/components/Text/Title/Vertical_Floema";
 import Button from "@/components/Buttons/Button_Floema";
 import { mapGetters, mapState } from "vuex";
 
+import animation from '../../../mixins/animation.js'
+
 export default {
+  mixins:[animation],
   data() {
     return {
       homeData: null,
@@ -58,6 +61,9 @@ export default {
   },
   created(){
    this.homeData = this.content.content.content[0].frameContent
+  },
+  mounted(){
+    this.show(this.$refs.container)
   },
   methods: {
     verifyType(content){

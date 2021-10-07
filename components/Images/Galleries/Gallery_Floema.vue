@@ -8,7 +8,8 @@
       <figure
         :key="`media-${index}`"
         :class="`home__gallery__media home__gallery__media--${Math.round(index % 5 + 1)}`">
-        <img 
+        <img
+          :onload="load(index)"
           class="home__gallery__media__image" 
           :alt="media.image.alt"
           :data-src="`https://dxemhjekrc4z1.cloudfront.net/fit-in/300x300/${media.image.url}`"
@@ -23,7 +24,7 @@ export default {
   data() {
     return {
       gallery:[],
-      title:""
+      title:"",
     };
   },
   props:{
@@ -40,6 +41,9 @@ export default {
         this.title = this.content.frameContent.text
         this.gallery = this.content.frameContent.items
       }
+    },
+    load(index){
+      console.log(`${index/this.gallery.length*100}%`)
     }
   }
 }

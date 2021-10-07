@@ -1,5 +1,6 @@
 export const state = () => ({
-  totalPost: []
+  totalPost: [],
+  
 })
 export const getters = {
   activePostContent: state => {

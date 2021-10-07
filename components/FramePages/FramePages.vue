@@ -1,15 +1,15 @@
 <template>
   <div>
     <AboutFloema
-      v-if="content.content.route == '/about-floema'"
+      v-if="content.content.postId == 367472"
       :content="content"
     />
     <CollectionsFloema
-      v-if="content.content.route == '/20210919366952'"
+      v-if="content.content.postId == 366952"
       :content="content"
     />
     <HomeFloema
-      v-if="content.content.route == '/20211002366938'"
+      v-if="content.content.postId == 366938"
       :content="content"
     />
   </div>
