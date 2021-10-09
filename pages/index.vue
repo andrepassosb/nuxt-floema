@@ -7,6 +7,7 @@
       v-if="dataPost && !preloader"
       :content="dataPost"/>
   </div>
+  <!-- teste push -->
 </template>
 
 <script>
