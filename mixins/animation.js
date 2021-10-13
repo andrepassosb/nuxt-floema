@@ -14,6 +14,7 @@ export default{
     },
     onLoaded(text,element){
       console.log('aqui1')
+      
       const vm = this
       this.animateOut = GSAP.timeline({
         delay:1,
