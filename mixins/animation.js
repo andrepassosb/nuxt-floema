@@ -28,7 +28,7 @@ export default{
         stagger: 0.1,
         y: '100%'
       })
-      this.animateOut.to(element,{
+      .to(element,{
         duration : 1.5,
         ease : 'expo.out',
         scaleY  :0,
