@@ -34,7 +34,7 @@ export default{
         scaleY  :0,
         transformOrigin: '100% 100%'
       },'-=1')
-      this.animateOut.call(_ => {
+      .call(_ => {
         vm.$emit('loaded')
       })
     },
