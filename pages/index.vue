@@ -1,13 +1,14 @@
 <template>
   <div>
     <Preloader 
-      v-show="preloader"
-      :percentage="percentage"/>
+      v-if="preloader"
+      :percentage="percentage"
+      :animate="animate"
+      @loaded="preloader = false"/>
     <FramePages
-      v-if="dataPost && !preloader"
       :content="dataPost"/>
   </div>
-  <!-- teste push -->
+  <!-- dataPost && !preloader-->
 </template>
 
 <script>
@@ -25,7 +26,8 @@ export default {
   data() {
     return {
       preloader:true,
-      percentage:0
+      percentage:0,
+      animate:false
     };
   },
     async asyncData ({ $axios, params, store } ) {
@@ -60,10 +62,10 @@ export default {
     let interval = setInterval(() => {
       time = time + 1
       this.percentage = Math.round(time/stopTime*100)
-      console.log(this.percentage)
       if(time == stopTime){
         clearInterval(interval)
-        this.preloader = false
+        this.animate = true
+        //this.preloader = false
       }
     }, 10);
     

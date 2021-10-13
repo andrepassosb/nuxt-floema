@@ -1,7 +1,7 @@
 <template>
-  <div class="preloader">
-    <p class="preloader__text">
-      The surprise of what is possible to make with a simple and thin thread.
+  <div class="preloader" ref="preloader">
+    <p class="preloader__text" ref="preloaderText">
+      The surprise of what is <br> possible to make with a simple <br> and thin thread.
     </p>
     <div class="preloader__number">
       <div class="preloader__number__text"> {{ percentage }} % </div>
@@ -10,12 +10,45 @@
 </template>
 
 <script>
+import { split } from '../../utils/text'
+import animation from '../../mixins/animation'
+
 export default {
+  name:'Preloader',
+  mixins:[animation],
+  data() {
+    return {
+      titleSpans: null,
+    };
+  },
   props:{
     percentage:{
       required: false
+    },
+    animate:{
+     required: false
     }
   },
+  mounted(){
+    this.titleSpans = split({
+    append: true,
+    element: this.$refs.preloaderText,
+    expression: '<br>'
+    });
+    //this.onLoaded(this.titleSpans);
+    //this.onLoadedHide(this.$refs.preloader)
+  },
+  watch:{
+    animate(){
+      if(this.animate){
+        this.onLoaded(this.titleSpans,this.$refs.preloader)
+      }
+    }
+  },
+  beforeDestroy(){
+    //this.onLoadedHide(this.$refs.preloader)
+    //console.log('acabou')
+  }
 }
 </script>
 
