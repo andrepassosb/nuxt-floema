@@ -1,8 +1,9 @@
 <template>
-  <div ref="container" data-background="#B2B8C3" data-color="#37384C">
+  <div ref="container"  data-background="#B2B8C3" data-color="#37384C">
     <Menu/>
-    <div class="about" >
+    <div class="about" @wheel="onMouseWheel" >
       <div class="about__wrapper"
+        ref="about"
         v-if="aboutData"
       >
         <template
@@ -43,6 +44,9 @@ import Gallery from "@/components/Images/Galleries/Carousel_Floema";
 import Description from "@/components/Images/Description/Description_Floema";
 import Highlight from "@/components/Images/Highlight/Highlight_Floema";
 import animation from '../../../mixins/animation.js'
+import Prefix from '../../../utils/prefix'
+
+import GSAP from 'gsap'
 
 import axios from 'axios'
 
@@ -52,6 +56,13 @@ export default {
   data() {
     return {
       aboutData: null,
+      transformPrefix : Prefix('transform'),
+      scroll:{
+        position: 0,
+        current: 0,
+        target: 0,
+        limit: 0
+      }
     };
   },
   components:{
@@ -67,13 +78,32 @@ export default {
   },
   created(){
     this.aboutData = this.content.content.content
+    console.log(this.transformPrefix)
   },
   fetch(){
   },
   mounted(){
     this.show(this.$refs.container)
+    this.scroll.limit = this.$refs.about.clientHeight - window.innerHeight
   },
   methods: {
+    update(element){
+      this.scroll.target = GSAP.utils.clamp(0,this.scroll.limit,this.scroll.target)
+      this.scroll.current = GSAP.utils.interpolate(this.scroll.current,this.scroll.target,0.1)
+      this.transform (element, this.scroll.current)
+    },
+    transform (element, y) {
+      element.style[this.transformPrefix] = `translate3d(0, ${-Math.round(y)}px, 0)`
+    },
+    onMouseWheel(){
+      console.log(this.scroll.limit)
+      window.addEventListener("mousewheel", event => {
+          const delta = Math.sign(event.deltaY);
+          this.scroll.target += delta
+          this.update(this.$refs.about)
+          //console.info(this.scroll.target);
+      });
+    },
 		requestApiData(url, type, data = '') {
 			return new Promise(resolve => {
 				axios({

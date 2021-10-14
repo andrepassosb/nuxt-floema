@@ -7,22 +7,15 @@ export default{
         backgroundColor: element.getAttribute('data-background'),
         color: element.getAttribute('data-color')
       })
-        // GSAP.from(element,{
-        //   autoAlpha: 0,
-        //   delay:0.5
-        // })
+        GSAP.from(element,{
+          autoAlpha: 0,
+          delay:0.5
+        })
     },
     onLoaded(text,element){
-      console.log('aqui1')
-      
       const vm = this
-      this.animateOut = GSAP.timeline({
-        delay:1,
-        onComplete() {
-          vm.$emit('loaded')
-        }
-      })
-      this.animateOut.to(text,{
+      let animateOut = GSAP.timeline()
+      animateOut.to(text,{
         autoAlpha: 0,
         duration: 1.5,
         ease: 'back.inOut',
@@ -34,8 +27,9 @@ export default{
         ease : 'expo.out',
         scaleY  :0,
         transformOrigin: '100% 100%'
-      },'-=1')
+      })
       .call(_ => {
+        console.log('foi')
         vm.$emit('loaded')
       })
     },
