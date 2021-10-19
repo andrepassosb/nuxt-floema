@@ -13,6 +13,7 @@ export default{
         })
     },
     onLoaded(text,element){
+
       const vm = this
       let animateOut = GSAP.timeline()
       animateOut.to(text,{
@@ -33,6 +34,17 @@ export default{
         vm.$emit('loaded')
       })
     },
+    titleAnimate(text,element){
+      const vm = this
+      let animateIn = GSAP.timeline( {opacity: 0})
+      animateIn.to(text,{
+        autoAlpha: 1,
+        duration: 3,
+        ease: 'back.inOut',
+        stagger: 0.1,
+        y: '100%'
+      })
+    }
 
   }
 }

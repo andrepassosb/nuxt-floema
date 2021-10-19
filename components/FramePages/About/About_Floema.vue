@@ -1,5 +1,5 @@
 <template>
-  <div ref="container"  data-background="#B2B8C3" data-color="#37384C">
+  <div ref="container"  data-background="#B2B8C3" data-color="#37384C" >
     <Menu/>
     <div class="about" @wheel="onMouseWheel" >
       <div class="about__wrapper"
@@ -32,6 +32,9 @@
             PrismicDOM.RichText.asHtml(about.data.footer_credits)
           </div>
         </footer> -->
+        <div ref="animate">
+          TEXTO
+        </div>
       </div>
     </div>
   </div>
@@ -62,7 +65,8 @@ export default {
         current: 0,
         target: 0,
         limit: 0
-      }
+      },
+      observer:null
     };
   },
   components:{
@@ -78,16 +82,30 @@ export default {
   },
   created(){
     this.aboutData = this.content.content.content
-    console.log(this.transformPrefix)
+
   },
   fetch(){
   },
   mounted(){
     this.show(this.$refs.container)
-    this.scroll.limit = this.$refs.about.clientHeight - window.innerHeight
+    this.scroll.limit = this.$refs.about.clientHeight - window.innerHeight;
+    // this.observer = new IntersectionObserver(([entry]) => {
+    //   if (entry && entry.isIntersecting) {
+    //     console.log('animateIn')
+    //   }
+    //   else{
+    //     console.log('animateOut')
+    //   }
+    // });
+    // this.observer.observe(this.$refs.animate);
   },
   methods: {
-    update(element){
+    onElementObserved(entries) {
+      entries.forEach(({ target, isIntersecting}) => {
+        console.log(target)
+      });
+    },
+    update(element){ 
       this.scroll.target = GSAP.utils.clamp(0,this.scroll.limit,this.scroll.target)
       this.scroll.current = GSAP.utils.interpolate(this.scroll.current,this.scroll.target,0.1)
       this.transform (element, this.scroll.current)
@@ -96,7 +114,6 @@ export default {
       element.style[this.transformPrefix] = `translate3d(0, ${-Math.round(y)}px, 0)`
     },
     onMouseWheel(){
-      console.log(this.scroll.limit)
       window.addEventListener("mousewheel", event => {
           const delta = Math.sign(event.deltaY);
           this.scroll.target += delta

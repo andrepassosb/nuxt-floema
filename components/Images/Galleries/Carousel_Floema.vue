@@ -16,18 +16,23 @@
       </figure>
     </div>
   </div>
-    <h2 class="about__title" data-animation="paragraph">
+    <h2 class="about__title" data-animation="paragraph" style="display:hidden" v-observer="animate">
       {{ title }}
     </h2>
     </section>
 </template>
 
 <script>
+import animation from '../../../mixins/animation'
+
 export default {
+  name:'Carousel_Floema',
+  mixins:[animation],
   data() {
     return {
       gallery:[],
-      title:""
+      title:"",
+      animate : []
     };
   },
   props:{
@@ -37,6 +42,9 @@ export default {
   },
   created(){
     this.populateGallery()
+    this.animate = [this.titleAnimate]
+  },
+  mounted(){
   },
   methods: {
     populateGallery(){
