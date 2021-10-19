@@ -1,7 +1,8 @@
 <template>
   <div ref="container"  data-background="#B2B8C3" data-color="#37384C" >
     <Menu/>
-    <div class="about" @wheel="onMouseWheel" >
+    <div class="about" >
+    <!-- <div class="about" @wheel="onMouseWheel" > -->
       <div class="about__wrapper"
         ref="about"
         v-if="aboutData"
