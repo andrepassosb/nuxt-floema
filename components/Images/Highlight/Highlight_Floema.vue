@@ -7,11 +7,11 @@
         target="_blank"
       >
         <template v-if="label != ''">
-          <p class="about__highlight__label" data-animation="paragraph">
+          <p class="about__highlight__label" data-animation="paragraph" >
             {{ label }}
           </p>
         </template>
-        <h3 class="about__highlight__title" data-animation="highlight">
+        <h3 class="about__highlight__title" data-animation="highlight" style="display:hidden" v-observer>
           {{ title }}
         </h3>
       </a>

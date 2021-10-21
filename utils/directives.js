@@ -1,24 +1,43 @@
 import Vue from 'vue'
-import { split } from '../utils/text'
+import { calculate, split } from '../utils/text'
+import GSAP from 'gsap'
 
 Vue.directive('observer', {
-  inserted: (el,binding) => {
-    let observer = new IntersectionObserver(([entry]) => {
-        const text = el.textContent.replace(/&nbsp;/g,"<br/>")
-        const titleSpans = split({
+    inserted: (element, binding) => {
+        console.log(element)
+        split({
             append: true,
-            element: el,
-            expression: '&nbsp;'
-            });
-        const animateIn = binding.value[0]
-        if (entry && entry.isIntersecting) {
-            animateIn(titleSpans,el)
-            console.log('animateIn')
-        }
-        else{
-            console.log('animateOut')
-        }
-      });
-      observer.observe(el);
-  }
+            element: element,
+        });
+        split({
+            append: true,
+            element: element,
+        });
+        const elementLinesSpan = element.querySelectorAll('span span')
+        const elementLines = calculate(elementLinesSpan)
+        console.log(elementLines)
+        let observer = new IntersectionObserver(([entry]) => {
+            if (entry && entry.isIntersecting) {
+                GSAP.set(element, {
+                    autoAlpha:1
+                })
+                GSAP.fromTo(elementLines, {
+                    y:'100%'
+                }, {
+                    delay:0.5,
+                    duration: 1.5,
+                    stagger:0.2,
+                    y:'0%'
+                })
+                console.log('animateIn')
+            }
+            else {
+                GSAP.set(element, {
+                    autoAlpha: 0
+                })
+                console.log('animateOut')
+            }
+        });
+        observer.observe(element);
+    }
 })

@@ -16,7 +16,7 @@
       </figure>
     </div>
   </div>
-    <h2 class="about__title" data-animation="paragraph" style="display:hidden" v-observer="animate">
+    <h2 class="about__title" data-animation="paragraph" style="display:hidden" v-observer>
       {{ title }}
     </h2>
     </section>

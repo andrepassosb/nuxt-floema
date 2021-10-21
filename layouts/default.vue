@@ -126,8 +126,8 @@ html {
   color: #F9F1E7; */
   font-size: calc(100vw / 1920 * 10);
   line-height: 1;
-  overflow: hidden;
-  position: fixed;
+  /* overflow: hidden;
+  position: fixed; */
 }
 @media (max-width: 767px) {
   html {
@@ -137,7 +137,7 @@ html {
 
 body {
   font-family: "Suisse BP";
-  position: fixed;
+  /* position: fixed; */
 }
 
 a {
@@ -168,7 +168,7 @@ img {
 img.loaded {
   opacity: 1;
 }
-/* 
+
 [data-animation=label] span,
 [data-animation=paragraph] span,
 [data-animation=title] span {
@@ -176,7 +176,7 @@ img.loaded {
   overflow: hidden;
   vertical-align: top;
 }
-
+/* 
 [data-animation=button] {
   display: inline-block;
   position: relative;

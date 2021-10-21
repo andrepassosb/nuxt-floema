@@ -6,7 +6,7 @@
       <div
         :key="`${index}-label`"
         class="home__titles__label">
-        <div class="home__titles__label__text"> {{ text.title }}</div>
+        <div class="home__titles__label__text" > {{ text.title }}</div>
       </div>
       <div
         :key="`${index}-title`"
