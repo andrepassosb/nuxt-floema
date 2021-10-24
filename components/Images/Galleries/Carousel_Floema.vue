@@ -16,7 +16,7 @@
       </figure>
     </div>
   </div>
-    <h2 class="about__title" data-animation="paragraph" style="display:hidden" v-observer>
+    <h2 class="about__title" data-animation="paragraph" style="display:hidden" v-inViewPort="animate">
       {{ title }}
     </h2>
     </section>
@@ -32,7 +32,10 @@ export default {
     return {
       gallery:[],
       title:"",
-      animate : []
+      animate : {
+        inView : this.titleAnimateIn,
+        outView : this.titleAnimateOut
+      }
     };
   },
   props:{
@@ -42,7 +45,6 @@ export default {
   },
   created(){
     this.populateGallery()
-    this.animate = [this.titleAnimate]
   },
   mounted(){
   },

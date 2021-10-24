@@ -1,41 +1,20 @@
 import Vue from 'vue'
 import { calculate, split } from '../utils/text'
 import GSAP from 'gsap'
+import each from 'lodash/each'
 
-Vue.directive('observer', {
+Vue.directive('inViewPort', {
     inserted: (element, binding) => {
-        console.log(element)
-        split({
-            append: true,
-            element: element,
-        });
-        split({
-            append: true,
-            element: element,
-        });
-        const elementLinesSpan = element.querySelectorAll('span span')
-        const elementLines = calculate(elementLinesSpan)
-        console.log(elementLines)
+        const inView = binding.value.inView
+
         let observer = new IntersectionObserver(([entry]) => {
             if (entry && entry.isIntersecting) {
-                GSAP.set(element, {
-                    autoAlpha:1
-                })
-                GSAP.fromTo(elementLines, {
-                    y:'100%'
-                }, {
-                    delay:0.5,
-                    duration: 1.5,
-                    stagger:0.2,
-                    y:'0%'
-                })
                 console.log('animateIn')
+                inView(element)
             }
             else {
-                GSAP.set(element, {
-                    autoAlpha: 0
-                })
                 console.log('animateOut')
+                inView(element)
             }
         });
         observer.observe(element);

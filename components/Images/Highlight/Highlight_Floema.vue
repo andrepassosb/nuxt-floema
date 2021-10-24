@@ -11,7 +11,7 @@
             {{ label }}
           </p>
         </template>
-        <h3 class="about__highlight__title" data-animation="highlight" style="display:hidden" v-observer>
+        <h3 class="about__highlight__title" data-animation="highlight" style="display:hidden">
           {{ title }}
         </h3>
       </a>
