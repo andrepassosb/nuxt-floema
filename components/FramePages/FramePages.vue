@@ -9,7 +9,7 @@
       :content="content"
     />
     <HomeFloema
-      v-if="content.content.postId == 366938"
+      v-if="content.content.postId == 369411"
       :content="content"
     />
   </div>
@@ -37,6 +37,7 @@ export default {
     }
   },
   created(){
+    console.log(this.content)
   },
   methods:{
   }

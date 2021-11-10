@@ -12,6 +12,7 @@
           v-html="text"
           class="about__content__description"
           data-animation="paragraph"
+          v-inViewPort="animate"
         >
         </div>
       </div>
@@ -32,12 +33,23 @@
 
 
 <script>
+import animation from '../../../mixins/animation'
+
 export default {
+  mixins:[animation],
   data() {
     return {
       media: "",
       label: "",
       text: "",
+      animate : {
+        inView : {
+          function : this.ParagraphAnimateIn,
+          split : 1 
+          },
+        outView : { 
+          function : this.ParagraphAnimateOut }
+      }
     };
   },
   props:{

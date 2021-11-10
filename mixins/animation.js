@@ -36,20 +36,17 @@ export default {
                     vm.$emit('loaded')
                 })
         },
+
+        // Animação dos Titulos quando esta na view port
         titleAnimateIn(element) {
-            split({
-                append: true,
-                element: element,
-            });
-            split({
-                append: true,
-                element: element,
-            });
             const elementLinesSpan = element.querySelectorAll('span span')
             const elementLines = calculate(elementLinesSpan)
             let timeline = GSAP.timeline({
                 delay: 0.5
             })
+            console.log('element',element)
+            // console.log('elementLines',elementLines)
+            // console.log('elementLinesSpan',elementLinesSpan)
             timeline.set(element, {
                 autoAlpha: 1
             })
@@ -64,11 +61,72 @@ export default {
                 }, 0)
             })
         },
-        titleAnimateOut(element){
+        titleAnimateOut(element) {
             GSAP.set(element, {
                 autoAlpha: 0
             })
-        }
-
+        },
+        // Animação dos paragrafos quando esta na view port
+        ParagraphAnimateIn(element) {
+            const elementLinesSpan = element.querySelectorAll('span')
+            const elementLines = calculate(elementLinesSpan)
+            let timeline = GSAP.timeline({
+                delay: 0.5
+            })
+            timeline.set(element, {
+                autoAlpha: 1
+            })
+            each(elementLines, (line, index) => {
+                timeline.fromTo(line, {
+                    autoAlpha: 0,
+                    y: '100%'
+                }, {
+                    autoAlpha: 1,
+                    delay: index * 0.2,
+                    duration: 1.5,
+                    ease: 'expo.out',
+                    y: '0%'
+                }, 0)
+            })
+        },
+        ParagraphAnimateOut(element) {
+            GSAP.set(element, {
+                autoAlpha: 0
+            })
+        },
+        HighlightAnimateIn(element){
+            let timeline = GSAP.timeline({
+                delay: 0.5
+            })
+            timeline.set(element, {
+                autoAlpha: 1
+            })
+            timeline.fromTo(element, {
+                autoAlpha: 0,
+                scale:1.5
+            }, {
+                autoAlpha:1,
+                duration:1.5,
+                ease: 'expo.out',
+                scale:1
+            }, 0)
+            // let timelineIn = GSAP.timeline({
+            //     delay:0.5
+            // })
+            // timelineIn.fromTo(element,{
+            //     autoAlpha:0,
+            //     scale:1.5
+            // }),{
+            //     autoAlpha:1,
+            //     duration:1.5,
+            //     ease: 'expo.out',
+            //     scale:1
+            // }
+        },
+        HighlightAnimateOut(element) {
+            GSAP.set(element, {
+                autoAlpha: 0
+            })
+        },
     }
 }

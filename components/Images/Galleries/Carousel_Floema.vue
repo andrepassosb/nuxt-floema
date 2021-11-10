@@ -33,8 +33,11 @@ export default {
       gallery:[],
       title:"",
       animate : {
-        inView : this.titleAnimateIn,
-        outView : this.titleAnimateOut
+        inView : {
+          function : this.titleAnimateIn,
+          split : 2 },
+        outView : { 
+          function : this.titleAnimateOut }
       }
     };
   },

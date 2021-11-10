@@ -11,7 +11,7 @@
             {{ label }}
           </p>
         </template>
-        <h3 class="about__highlight__title" data-animation="highlight" style="display:hidden">
+        <h3 class="about__highlight__title" data-animation="highlight" style="display:hidden" v-inViewPort="animate">
           {{ title }}
         </h3>
       </a>
@@ -35,12 +35,23 @@
 </template>
 
 <script>
+import animation from '../../../mixins/animation'
+
 export default {
+  mixins:[animation],
   data() {
     return {
       gallery: [],
       title: "",
       label: "",
+      animate : {
+        inView : {
+          function : this.HighlightAnimateIn,
+          split : 0 
+          },
+        outView : { 
+          function : this.HighlightAnimateOut }
+      }
     };
   },
   props:{

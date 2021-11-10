@@ -20,11 +20,16 @@
 </template>
 
 <script>
+import * as THREE from 'three';
+
 export default {
   data() {
     return {
       gallery:[],
       title:"",
+      renderer: null,
+      gl: null,
+      camera: null
     };
   },
   props:{
@@ -33,7 +38,10 @@ export default {
     }
   },
   created(){
-    this.populateGallery()
+    this.populateGallery();
+  },
+  mounted(){
+    this.createGalery()
   },
   methods: {
     populateGallery(){
@@ -44,7 +52,26 @@ export default {
     },
     load(index){
       console.log(`${index/this.gallery.length*100}%`)
-    }
+    },
+    async createGalery(){
+      await this.createRenderer();
+      await this.createCamera();
+      window.addEventListener( 'resize', this.resize(), false );
+    },
+    createRenderer () {
+      this.renderer = new THREE.WebGLRenderer()
+      this.gl = this.renderer.domElement
+      document.body.appendChild(this.gl)
+    },
+    createCamera () {
+      this.camera = new THREE.PerspectiveCamera(this.renderer.domElemen);
+      this.camera.position.z = 5;
+    },
+    resize() {
+    this.camera.aspect = this.gl.width / this.gl.height;
+    this.camera.updateProjectionMatrix();
+    this.renderer.setSize( window.innerWidth, window.innerHeight );
+    },
   }
 }
 </script>
