@@ -161,7 +161,7 @@ export default {
   top: 0;
   transform: translateX(-50%);
   width: 100%;
-  /* visibility: hidden; */
+  visibility: hidden;
 }
 @media (max-width: 768px) {
   .home__gallery {
